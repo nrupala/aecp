@@ -153,15 +153,23 @@ def render_units(paths: Paths | None = None,
         None, apps + "/ozone",
     )
 
+    u = comps["ozone-om"]
+    units[u.unit] = _svc(
+        u, "network-online.target aecp-ozone-scm.service", jenv,
+        ozone_env + "Environment=OZONE_OPTS=-Xmx256m\n",
+        f"{apps}/ozone/bin/ozone om",
+        None, apps + "/ozone",
+    )
+
     for key, svc, heap in (
-        ("ozone-om", "om", "-Xmx256m"),
         ("ozone-dn", "datanode", "-Xmx512m"),
         ("ozone-s3g", "s3g", "-Xmx192m"),
         ("ozone-recon", "recon", "-Xmx192m"),
     ):
         u = comps[key]
+        after = "aecp-ozone-om.service" if key == "ozone-s3g" else "aecp-ozone-scm.service"
         units[u.unit] = _svc(
-            u, "network-online.target aecp-ozone-scm.service", jenv,
+            u, f"network-online.target {after}", jenv,
             ozone_env + f"Environment=OZONE_OPTS={heap}\n",
             f"{apps}/ozone/bin/ozone {svc}",
             None, apps + "/ozone",
