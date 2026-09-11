@@ -235,6 +235,7 @@ cat > "$APPS/ozone/etc/hadoop/ozone-site.xml" <<EOF
   <property><name>ozone.scm.datanode.id.dir</name><value>$DATA_ROOT/ozone/meta</value></property>
   <property><name>hdds.datanode.dir</name><value>$DATA_ROOT/ozone/dn-data</value></property>
   <property><name>ozone.datanode.data.dirs</name><value>$DATA_ROOT/ozone/dn-data</value></property>
+  <property><name>hdds.datanode.volume.min.free.space</name><value>4294967296</value></property>
   <property><name>ozone.replication</name><value>ONE</value></property>
   <property><name>ozone.server.default.replication</name><value>1</value></property>
   <property><name>ozone.server.default.replication.type</name><value>RATIS</value></property>
