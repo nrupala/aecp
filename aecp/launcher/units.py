@@ -215,6 +215,7 @@ def render_units(paths: Paths | None = None,
     units[u.unit] = _svc(
         u, "network-online.target", jenv,
         f"Environment=SUPERSET_CONFIG_PATH={data}/superset/superset_config.py\n"
+        f"Environment=FLASK_APP=superset.app:create_app()\n"
         f"Environment=PYTHONPATH={p.repo}\n",
         f"{svenv}/bin/gunicorn --workers 2 --timeout 120 --bind 0.0.0.0:8087 "
         f"\"superset.app:create_app()\"",

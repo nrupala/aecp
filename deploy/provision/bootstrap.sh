@@ -309,19 +309,21 @@ fi
 export PATH="$HOME/.cargo/bin:$PATH"
 log "installing apache-superset==5.0.0 into dedicated venv (py3.11)"
 "$VENV/bin/uv" pip install --python "$SVENV/bin/python" "apache-superset==5.0.0" \
-  || die "apache-superset install failed"
+  "marshmallow<4" "marshmallow-sqlalchemy<1.0" || die "apache-superset install failed"
 "$VENV/bin/uv" pip install --python "$SVENV/bin/python" "gunicorn" || die "gunicorn install failed"
 # keep the main venv clean of the broken 6.x attempt
 /opt/aecp/venv/bin/pip uninstall -y apache-superset >/dev/null 2>&1 || true
 export AECP_SUPERSET_VENV="$SVENV"
 
 export SUPERSET_CONFIG_PATH="$DATA_ROOT/superset/superset_config.py"
+export FLASK_APP="superset.app:create_app()"
 if [ ! -f "$DATA_ROOT/superset/.initialized" ]; then
   "$SVENV/bin/superset" db upgrade
   "$SVENV/bin/superset" init
   SUP_PW="$(openssl rand -hex 12)"
-  "$SVENV/bin/superset" fab create-admin -u admin -p "$SUP_PW" -f A -l E \
-    -e admin@aecp.local >/dev/null 2>&1 || log "superset admin already exists"
+  "$SVENV/bin/superset" fab create-admin --username admin --password "$SUP_PW" \
+    --firstname A --lastname E --email admin@aecp.local \
+    >/dev/null 2>&1 || log "superset admin already exists"
   printf 'superset admin: admin / %s\n' "$SUP_PW" > "$DATA_ROOT/superset/admin.txt"
   chmod 600 "$DATA_ROOT/superset/admin.txt"
   touch "$DATA_ROOT/superset/.initialized"
