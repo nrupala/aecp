@@ -186,8 +186,9 @@ def render_units(paths: Paths | None = None,
         u, "network-online.target", jenv +
         f"Environment=JAVA_HOME={solr_java}\n",
         "Environment=SOLR_HEAP=512m\n"
+        f"Environment=SOLR_HOME={data}/solr/server\n"
         f"Environment=SOLR_LOGS_DIR={data}/solr/log\n",
-        f"{apps}/solr/bin/solr start -f -s {data}/solr/server -p 8983",
+        f"{apps}/solr/bin/solr start -f -p 8983",
         None, f"{data}/solr",
     )
 

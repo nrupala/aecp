@@ -168,11 +168,11 @@ if [ ! -x "$BIN/guacd" ]; then
   mkdir -p "$APPS/guac-build"
   tar -xzf "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz" -C "$APPS/guac-build" \
       --strip-components=1
-  ( cd "$APPS/guac-build" && ./configure >/dev/null && make -j"$(nproc)" >/dev/null \
+( cd "$APPS/guac-build" && ./configure >/dev/null && make -j"$(nproc)" >/dev/null \
       && make install >/dev/null && ldconfig )
-  ln -sf /usr/local/sbin/guacd "$BIN/guacd"
-ln -sf /usr/local/sbin/guacd "$APPS/bin/guacd"
 fi
+ln -sf /usr/local/sbin/guacd "$BIN/guacd"
+ln -sf /usr/local/sbin/guacd "$APPS/bin/guacd"
 
 # Flink <-> Pulsar bridge jars
 fetch "$MAVEN/org/apache/flink/flink-connector-pulsar/$FLINK_PULSAR_CONNECTOR_VERSION/flink-connector-pulsar-$FLINK_PULSAR_CONNECTOR_VERSION.jar" \
@@ -267,11 +267,9 @@ EOF
 TB="$APPS/tomcat-base"
 mkdir -p "$TB/conf" "$TB/logs" "$TB/temp" "$TB/webapps" "$TB/work" \
          "$DATA_ROOT/guacamole/.guacamole" "$DATA_ROOT/guacd"
-if [ ! -f "$TB/conf/server.xml" ]; then
-  cp "$APPS/tomcat/conf/server.xml" "$TB/conf/server.xml"
-  sed -i 's/port="8080"/port="8090"/' "$TB/conf/server.xml"
-  sed -i 's/port="8005"/port="8006"/' "$TB/conf/server.xml"
-fi
+cp "$APPS/tomcat/conf/server.xml" "$TB/conf/server.xml"
+sed -i 's/port="8080"/port="8090"/' "$TB/conf/server.xml"
+sed -i 's/port="8005"/port="8006"/' "$TB/conf/server.xml"
 cp "$DL/guacamole.war" "$TB/webapps/guacamole.war"
 cat > "$DATA_ROOT/guacamole/.guacamole/guacamole.properties" <<EOF
 guacd-hostname: 127.0.0.1
@@ -299,10 +297,15 @@ chmod 600 "$DATA_ROOT/guacamole/credentials.txt"
 echo "$AECP_USER:$SSHPW" | chpasswd
 
 # ------------------------------------------------------------------ python venv
+# deploy the repo to a world-readable location (units run as user `aecp`)
+AEREPO="$AECP_ROOT/aecp-repo"
+rsync -a --delete --exclude .git "$REPO_ROOT/" "$AEREPO/"
+chown -R "$AECP_USER:$AECP_USER" "$AEREPO"
 if [ ! -x "$VENV/bin/python" ]; then python3 -m venv "$VENV"; fi
 log "installing python packages (aecp)"
 "$VENV/bin/pip" install --quiet --upgrade pip
-"$VENV/bin/pip" install -e "$REPO_ROOT[streaming,storage]" | tail -2 || die "aecp package install failed"
+"$VENV/bin/pip" install -e "$AEREPO[streaming,storage]" | tail -2 \
+  || die "aecp package install failed"
 # Superset 6.x is internally broken on py3.12 (sqlalchemy<2 pins resolve to
 # 2.x; pandas<2.1 has no py3.12 wheels for 5.x). Dedicated venv on 3.11 (uv)
 # with the mature apache-superset 5.0.0.
@@ -351,10 +354,11 @@ cat > /etc/profile.d/aecp.sh <<EOF
 export PATH="$VENV/bin:\$PATH"
 export AECP_HOME="$AECP_ROOT"
 export AECP_JAVA_HOME="$JAVA_HOME"
-export AECP_APPS="$APPS" AECP_DATA="$DATA_ROOT" AECP_VENV="$VENV" AECP_REPO="$REPO_ROOT"
+export AECP_APPS="$APPS" AECP_DATA="$DATA_ROOT" AECP_VENV="$VENV" AECP_REPO="$AEREPO"
 export AECP_SUPERSET_VENV="$SVENV"
 EOF
 export AECP_SUPERSET_VENV="${SVENV}"
+export AECP_REPO="$AEREPO"
 
 # ------------------------------------------------------------------ units
 log "applying systemd units (daemonless cgroup slice)"

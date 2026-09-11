@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo journalctl -u aecp-solr.service --since '-8 min' --no-pager | grep -avE '^--|Scheduled|systemd\[1\]|--data-home|--verbose|--jvm-opts|-e/--example|--force|specified directory|This parameter|validation with|  --|--verbose or' | head -14
