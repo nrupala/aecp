@@ -149,9 +149,8 @@ def render_units(paths: Paths | None = None,
     units[u.unit] = _svc(
         u, "network-online.target", jenv,
         ozone_env + "Environment=OZONE_OPTS=-Xmx256m\n",
-        f"{apps}/ozone/bin/ozone --daemon start scm",
-        f"{apps}/ozone/bin/ozone --daemon stop scm", apps + "/ozone",
-        service_type="forking",
+        f"{apps}/ozone/bin/ozone scm",
+        None, apps + "/ozone",
     )
 
     for key, svc, heap in (
@@ -162,11 +161,10 @@ def render_units(paths: Paths | None = None,
     ):
         u = comps[key]
         units[u.unit] = _svc(
-            u, "network-online.target aecp-ozone-om.service", jenv,
+            u, "network-online.target aecp-ozone-scm.service", jenv,
             ozone_env + f"Environment=OZONE_OPTS={heap}\n",
-            f"{apps}/ozone/bin/ozone --daemon start {svc}",
-            f"{apps}/ozone/bin/ozone --daemon stop {svc}", apps + "/ozone",
-            service_type="forking",
+            f"{apps}/ozone/bin/ozone {svc}",
+            None, apps + "/ozone",
         )
 
     u = comps["solr"]
