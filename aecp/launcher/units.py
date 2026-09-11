@@ -57,7 +57,7 @@ TasksMax=4096
 """
 
 _UNIT_ORDER = [
-    "pulsar", "flink-jm", "flink-tm",
+    "pulsar", "flink-jm", "flink-tm", "flink-sqlgw",
     "ozone-scm", "ozone-om", "ozone-dn", "ozone-s3g", "ozone-recon",
     "solr", "arrow-flight", "gateway",
     "zeppelin", "superset", "guacd", "guacamole",
@@ -138,6 +138,16 @@ def render_units(paths: Paths | None = None,
         u, "network-online.target aecp-flink-jobmanager.service", jenv,
         f"Environment=FLINK_HOME={apps}/flink\n",
         f"{apps}/flink/bin/taskmanager.sh start-foreground",
+        None, apps + "/flink",
+    )
+
+    u = comps["flink-sqlgw"]
+    units[u.unit] = _svc(
+        u, "network-online.target aecp-flink-jobmanager.service", jenv,
+        f"Environment=FLINK_HOME={apps}/flink\n",
+        f"{apps}/flink/bin/sql-gateway.sh start-foreground "
+        f"-Dsql-gateway.endpoint.rest.address=127.0.0.1 "
+        f"-Dsql-gateway.endpoint.rest.port=8085",
         None, apps + "/flink",
     )
 

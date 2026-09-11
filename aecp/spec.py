@@ -172,6 +172,9 @@ COMPONENTS: dict[str, Component] = {
                    "640M", "Cluster head + REST"),
     "flink-tm": _c("Apache Flink TaskManager", Layer.STREAMING, "aecp-flink-taskmanager.service",
                    (6122,), None, "1280M", "Stateful streaming processing slots"),
+    "flink-sqlgw": _c("Flink SQL Gateway (headless)", Layer.STREAMING, "aecp-flink-sql-gateway.service",
+                      (8085,), "http://127.0.0.1:8085/v1/info",
+                      "512M", "SQL submission endpoint for streaming jobs"),
     # L2 storage
     # L2 storage (Ozone 2.2 layout: SCM client RPC 9860, datanode RPC 9861,
     # block RPC 9863, web 9877; OM RPC 9862, web 9865, ratis 9872;
