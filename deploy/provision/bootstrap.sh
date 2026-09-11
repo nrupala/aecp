@@ -285,17 +285,34 @@ echo "$AECP_USER:$SSHPW" | chpasswd
 
 # ------------------------------------------------------------------ python venv
 if [ ! -x "$VENV/bin/python" ]; then python3 -m venv "$VENV"; fi
-log "installing python packages (aecp + apache-superset)"
+log "installing python packages (aecp)"
 "$VENV/bin/pip" install --quiet --upgrade pip
 "$VENV/bin/pip" install --quiet -e "$REPO_ROOT[streaming,storage]"
-"$VENV/bin/pip" install --quiet "apache-superset==5.0.0" || die "apache-superset install failed"
+# Superset 6.x is internally broken on py3.12 (sqlalchemy<2 pins resolve to
+# 2.x; pandas<2.1 has no py3.12 wheels for 5.x). Dedicated venv on 3.11 (uv)
+# with the mature apache-superset 5.0.0.
+SVENV="${AECP_SUPERSET_VENV:-$AECP_ROOT/venv-superset}"
+if [ ! -x "$SVENV/bin/python" ]; then
+  if ! command -v uv >/dev/null 2>&1; then
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    export PATH="$HOME/.local/bin:$PATH"
+  fi
+  uv venv --python 3.11 "$SVENV" || die "uv venv (py3.11) for superset failed"
+fi
+log "installing apache-superset==5.0.0 into dedicated venv (py3.11)"
+uv pip install --python "$SVENV/bin/python" "apache-superset==5.0.0" \
+  || die "apache-superset install failed"
+uv pip install --python "$SVENV/bin/python" "gunicorn" || die "gunicorn install failed"
+# keep the main venv clean of the broken 6.x attempt
+/opt/aecp/venv/bin/pip uninstall -y apache-superset >/dev/null 2>&1 || true
+export AECP_SUPERSET_VENV="$SVENV"
 
 export SUPERSET_CONFIG_PATH="$DATA_ROOT/superset/superset_config.py"
 if [ ! -f "$DATA_ROOT/superset/.initialized" ]; then
-  "$VENV/bin/superset" db upgrade
-  "$VENV/bin/superset" init
+  "$SVENV/bin/superset" db upgrade
+  "$SVENV/bin/superset" init
   SUP_PW="$(openssl rand -hex 12)"
-  "$VENV/bin/superset" fab create-admin -u admin -p "$SUP_PW" -f A -l E \
+  "$SVENV/bin/superset" fab create-admin -u admin -p "$SUP_PW" -f A -l E \
     -e admin@aecp.local >/dev/null 2>&1 || log "superset admin already exists"
   printf 'superset admin: admin / %s\n' "$SUP_PW" > "$DATA_ROOT/superset/admin.txt"
   chmod 600 "$DATA_ROOT/superset/admin.txt"
@@ -309,7 +326,9 @@ export PATH="$VENV/bin:\$PATH"
 export AECP_HOME="$AECP_ROOT"
 export AECP_JAVA_HOME="$JAVA_HOME"
 export AECP_APPS="$APPS" AECP_DATA="$DATA_ROOT" AECP_VENV="$VENV" AECP_REPO="$REPO_ROOT"
+export AECP_SUPERSET_VENV="$SVENV"
 EOF
+export AECP_SUPERSET_VENV="${SVENV}"
 
 # ------------------------------------------------------------------ units
 log "applying systemd units (daemonless cgroup slice)"

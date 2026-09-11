@@ -210,11 +210,12 @@ def render_units(paths: Paths | None = None,
     )
 
     u = comps["superset"]
+    svenv = os.environ.get("AECP_SUPERSET_VENV", p.venv)
     units[u.unit] = _svc(
         u, "network-online.target", jenv,
         f"Environment=SUPERSET_CONFIG_PATH={data}/superset/superset_config.py\n"
         f"Environment=PYTHONPATH={p.repo}\n",
-        f"{venv}/bin/gunicorn --workers 2 --timeout 120 --bind 0.0.0.0:8087 "
+        f"{svenv}/bin/gunicorn --workers 2 --timeout 120 --bind 0.0.0.0:8087 "
         f"\"superset.app:create_app()\"",
         None, f"{data}/superset",
     )
