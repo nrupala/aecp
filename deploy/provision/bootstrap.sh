@@ -127,7 +127,8 @@ if [ "${AECP_SKIP_APT:-0}" != "1" ]; then
   export DEBIAN_FRONTEND=noninteractive
   apt-get update -qq
   apt-get install -y -qq \
-    "$JDK_PACKAGE" git curl ca-certificates build-essential libtool-bin \
+    "$JDK_PACKAGE" openjdk-21-jdk-headless git curl ca-certificates \
+    build-essential libtool-bin \
     python3 python3-venv python3-dev \
     libcairo2-dev libjpeg-dev libpng-dev uuid-dev libssl-dev \
     libssh2-1-dev libtelnet-dev libvncserver-dev libwebsockets-dev \
@@ -135,7 +136,7 @@ if [ "${AECP_SKIP_APT:-0}" != "1" ]; then
 fi
 
 # ------------------------------------------------------------------ dirs+user
-mkdir -p "$APPS" "$DATA_ROOT" "$BIN"
+mkdir -p "$APPS" "$APPS/bin" "$DATA_ROOT" "$DATA_ROOT/pulsar" "$BIN"
 id -u "$AECP_USER" >/dev/null 2>&1 || useradd --create-home \
   --home-dir "/home/$AECP_USER" --shell /bin/bash "$AECP_USER"
 
@@ -164,6 +165,7 @@ if [ ! -x "$BIN/guacd" ]; then
   ( cd "$APPS/guac-build" && ./configure >/dev/null && make -j"$(nproc)" >/dev/null \
       && make install >/dev/null && ldconfig )
   ln -sf /usr/local/sbin/guacd "$BIN/guacd"
+ln -sf /usr/local/sbin/guacd "$APPS/bin/guacd"
 fi
 
 # Flink <-> Pulsar bridge jars
@@ -262,7 +264,7 @@ mkdir -p "$TB/conf" "$TB/logs" "$TB/temp" "$TB/webapps" "$TB/work" \
 if [ ! -f "$TB/conf/server.xml" ]; then
   cp "$APPS/tomcat/conf/server.xml" "$TB/conf/server.xml"
   sed -i 's/port="8080"/port="8090"/' "$TB/conf/server.xml"
-  sed -i '/8005/d' "$TB/conf/server.xml"
+  sed -i 's/port="8005"/port="8006"/' "$TB/conf/server.xml"
 fi
 cp "$DL/guacamole.war" "$TB/webapps/guacamole.war"
 cat > "$DATA_ROOT/guacamole/.guacamole/guacamole.properties" <<EOF
@@ -294,7 +296,7 @@ echo "$AECP_USER:$SSHPW" | chpasswd
 if [ ! -x "$VENV/bin/python" ]; then python3 -m venv "$VENV"; fi
 log "installing python packages (aecp)"
 "$VENV/bin/pip" install --quiet --upgrade pip
-"$VENV/bin/pip" install --quiet -e "$REPO_ROOT[streaming,storage]"
+"$VENV/bin/pip" install -e "$REPO_ROOT[streaming,storage]" | tail -2 || die "aecp package install failed"
 # Superset 6.x is internally broken on py3.12 (sqlalchemy<2 pins resolve to
 # 2.x; pandas<2.1 has no py3.12 wheels for 5.x). Dedicated venv on 3.11 (uv)
 # with the mature apache-superset 5.0.0.
@@ -320,6 +322,7 @@ log "installing apache-superset==5.0.0 into dedicated venv (py3.11)"
 "$VENV/bin/uv" pip install --python "$SVENV/bin/python" "gunicorn" || die "gunicorn install failed"
 # keep the main venv clean of the broken 6.x attempt
 /opt/aecp/venv/bin/pip uninstall -y apache-superset >/dev/null 2>&1 || true
+chmod -R a+rX "$SVENV"
 export AECP_SUPERSET_VENV="$SVENV"
 
 export SUPERSET_CONFIG_PATH="$DATA_ROOT/superset/superset_config.py"

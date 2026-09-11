@@ -181,8 +181,10 @@ def render_units(paths: Paths | None = None,
         )
 
     u = comps["solr"]
+    solr_java = os.environ.get("AECP_SOLR_JAVA_HOME", "/usr/lib/jvm/java-21-openjdk-arm64")
     units[u.unit] = _svc(
-        u, "network-online.target", jenv,
+        u, "network-online.target", jenv +
+        f"Environment=JAVA_HOME={solr_java}\n",
         "Environment=SOLR_HEAP=512m\n"
         f"Environment=SOLR_LOGS_DIR={data}/solr/log\n",
         f"{apps}/solr/bin/solr start -f -s {data}/solr/server -p 8983",
