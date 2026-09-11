@@ -288,7 +288,7 @@ if [ ! -x "$VENV/bin/python" ]; then python3 -m venv "$VENV"; fi
 log "installing python packages (aecp + apache-superset)"
 "$VENV/bin/pip" install --quiet --upgrade pip
 "$VENV/bin/pip" install --quiet -e "$REPO_ROOT[streaming,storage]"
-"$VENV/bin/pip" install --quiet "apache-superset" || die "apache-superset install failed"
+"$VENV/bin/pip" install --quiet "apache-superset==5.0.0" || die "apache-superset install failed"
 
 export SUPERSET_CONFIG_PATH="$DATA_ROOT/superset/superset_config.py"
 if [ ! -f "$DATA_ROOT/superset/.initialized" ]; then
