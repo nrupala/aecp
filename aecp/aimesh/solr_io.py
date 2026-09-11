@@ -63,8 +63,10 @@ def create_collection(solr_url: str, collection: str = "aecp_docs",
     )
     if not r.ok:
         raise RuntimeError(f"collection create failed: {r.status_code} {r.text[:400]}")
+    # Solr 10 schema API: single object of {"command": {...}, ...}
+    patch = {**field_type_payload(), **field_payload()}
     s = requests_post(f"{solr_url}/solr/{collection}/schema",
-                      json=[field_type_payload(), field_payload()], timeout=timeout)
+                      json=patch, timeout=timeout)
     if not s.ok:
         raise RuntimeError(f"schema update failed: {s.status_code} {s.text[:400]}")
     return {"collection": collection, "status": "created", "dimension": DIMENSION}
