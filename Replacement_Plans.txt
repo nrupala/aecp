@@ -1,0 +1,66 @@
+If you are keeping the stack 100% open-source while preparing for post-Mesos upgrades and applying production-grade security, here are the most effective alternatives within and around the Apache ecosystem.
+
+---
+
+### Replacing Apache Mesos
+
+Since [Apache Mesos was retired by the ASF](https://www.uber.com/us/en/blog/migrating-ubers-compute-platform-to-kubernetes-a-technical-journey/), you have two strong paths depending on whether you strictly require an Apache-governed project or the industry standard.
+
+#### Option A: [Apache YARN](https://ranger.apache.org/) (Strict 100% Apache Path)
+
+Instead of splitting workloads between YARN (for analytics) and Mesos (for containerization), consolidate everything into **Apache YARN**.
+
+* **Bare-Metal Containerization:** Modern YARN natively supports running workloads directly using Linux `cgroups` and Docker-less execution wrappers.
+* **Hardware Awareness:** YARN handles node label scheduling and GPU/NPU placement across bare-metal servers natively.
+* **Why it fits:** It keeps your architecture strictly within the ASF banner without introducing non-Apache codebases.
+
+#### Option B: Kubernetes + eBPF (The Modern Bare-Metal Industry Standard)
+
+If you are open to stepping outside Apache strictly for cluster orchestration (as most major Mesos users like Uber ended up doing), deploy **bare-metal Kubernetes** configured with:
+
+* **Host Networking & eBPF (e.g., Cilium):** Bypasses standard bridge networking overhead to retain near-native network speeds.
+* **Direct Cgroup v2 Integration:** Ensures zero-daemon execution efficiency similar to Mesos.
+
+---
+
+### Governance & Security for the Apache Arrow Memory Plane
+
+Securing an in-memory, zero-copy buffer layer like Apache Arrow requires balancing high throughput ($92.4\text{ GB/s}$) with strict Access Control (RBAC/ABAC).
+
+#### 1. [Apache Ranger](https://ranger.apache.org/) (Fine-Grained Authorization & Data Masking)
+
+* **How it fits:** [Apache Ranger](https://ranger.apache.org/) manages centralized access policies for data engines.
+* **Arrow Integration Strategy:** Instead of putting Ranger inside the zero-copy memory pathway (which would destroy performance), enforce Ranger policies **at the pointer lookup/flight execution layer**.
+* **Apache Arrow Flight SQL Integration:** Ranger intercepts the SQL/metadata planning phase (e.g., in Solr or Flink). Once Ranger grants access to specific columns or rows, the process receives the direct off-heap memory address reference to the Arrow buffer. Zero-copy speed is preserved during execution, but unauthorized memory addresses are never exposed.
+
+#### 2. [Apache Knox](https://www.dremio.com/wiki/apache-knox/) (Perimeter & Identity Gateway)
+
+* **How it fits:** [Apache Knox](https://www.dremio.com/wiki/apache-knox/) serves as a secure reverse proxy and single entry point for rest/RPC APIs.
+* **Architecture Role:** Knox sits at the perimeter in front of **Apache Guacamole**, **Zeppelin**, **Superset**, and **Solr Cloud**. It handles SSO/SAML/OAuth authentication and passes verified identity tokens (JWTs) downstream to the internal services.
+
+---
+
+### Revised Architecture Governance Topology
+
+```
+[ External User / Client ]
+            │
+            ▼
+┌────────────────────────────────────────────────────────┐
+│  APACHE KNOX GATEWAY (Perimeter Auth / Identity)       │
+└───────────┬────────────────────────────────────────────┘
+            │
+            ├───────────────► Apache Guacamole / Zeppelin / Superset
+            │
+            ▼
+┌────────────────────────────────────────────────────────┐
+│  APACHE RANGER (RBAC / Column Masking / Metadata Policy)│
+└───────────┬────────────────────────────────────────────┘
+            │ (Grants Off-Heap Pointer Tokens)
+            ▼
+┌────────────────────────────────────────────────────────┐
+│  ZERO-COPY APACHE ARROW MEMORY PLANE                   │
+│  (Direct memory transit; zero auth overhead on-path)   │
+└────────────────────────────────────────────────────────┘
+
+``` 

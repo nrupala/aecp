@@ -173,10 +173,11 @@ COMPONENTS: dict[str, Component] = {
     "flink-tm": _c("Apache Flink TaskManager", Layer.STREAMING, "aecp-flink-taskmanager.service",
                    (6122,), None, "1280M", "Stateful streaming processing slots"),
     # L2 storage
-    # L2 storage (Ozone 2.2 layout: SCM client RPC 9876, web 9877; OM RPC 9862,
-    # web 9865, ratis 9872; DN 19864/9856/9859/9882; S3G 9878; Recon 9888/9891)
+    # L2 storage (Ozone 2.2 layout: SCM client RPC 9860, datanode RPC 9861,
+    # block RPC 9863, web 9877; OM RPC 9862, web 9865, ratis 9872;
+    # DN 19864/9856/9859/9882; S3G 9878; Recon 9888/9891)
     "ozone-scm": _c("Apache Ozone SCM", Layer.STORAGE, "aecp-ozone-scm.service",
-                    (9876, 9877, 9860, 9861, 9863),
+                    (9860, 9861, 9863, 9877),
                     "http://127.0.0.1:9877/jmx?qry=Hadoop:service=SCMNode,name=*",
                     "640M", "Storage container manager"),
     "ozone-om": _c("Apache Ozone OM", Layer.STORAGE, "aecp-ozone-om.service",

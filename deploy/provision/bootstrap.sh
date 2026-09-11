@@ -212,10 +212,11 @@ cat > "$APPS/ozone/etc/hadoop/ozone-site.xml" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <property><name>ozone.scm.names</name><value>127.0.0.1</value></property>
-  <property><name>ozone.scm.address</name><value>127.0.0.1:9876</value></property>
+  <property><name>ozone.scm.address</name><value>127.0.0.1:9860</value></property>
+  <property><name>ozone.scm.client.address</name><value>127.0.0.1:9860</value></property>
+  <property><name>ozone.scm.datanode.address</name><value>127.0.0.1:9861</value></property>
+  <property><name>ozone.scm.block.client.address</name><value>127.0.0.1:9863</value></property>
   <property><name>ozone.scm.http-address</name><value>0.0.0.0:9877</value></property>
-  <property><name>ozone.scm.block.client.address</name><value>127.0.0.1:9876</value></property>
-  <property><name>ozone.scm.client.address</name><value>127.0.0.1:9876</value></property>
   <property><name>ozone.om.address</name><value>127.0.0.1:9862</value></property>
   <property><name>ozone.om.http-address</name><value>127.0.0.1:9865</value></property>
   <property><name>ozone.recon.address</name><value>127.0.0.1:9888</value></property>
@@ -363,10 +364,10 @@ log "starting Ozone SCM (OM init requires a running SCM)"
 systemctl enable aecp-ozone-scm.service >/dev/null 2>&1 || true
 systemctl restart aecp-ozone-scm.service
 for i in $(seq 1 30); do
-  ss -tln | grep -qE ':9876 ' && break
+  ss -tln | grep -qE ':9860 ' && break
   sleep 2
 done
-ss -tln | grep -qE ':9876 ' || die "SCM port 9876 never came up"
+ss -tln | grep -qE ':9860 ' || die "SCM client RPC port 9860 never came up"
 if [ ! -f "$DATA_ROOT/ozone/.om-initialized" ]; then
   rm -rf "$DATA_ROOT/ozone/meta/om" 2>/dev/null || true
   log "initializing Ozone OM"
