@@ -51,6 +51,8 @@ def make_catalog(config: OzoneConfig | None = None) -> Any:
     from pyiceberg.catalog.sql import SqlCatalog
 
     cfg = config or OzoneConfig()
+    # all options flow through the properties dict; py-io-impl is persisted
+    # there and pinned explicitly (see catalog_kwargs comment)
     return SqlCatalog("aecp", **cfg.catalog_kwargs())
 
 

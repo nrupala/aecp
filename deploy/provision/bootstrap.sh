@@ -23,6 +23,10 @@ AECP_USER="${AECP_USER:-aecp}"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 REPO_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 if [ "${AECP_FROM_REPO:-1}" = "1" ] && [ -f "$REPO_ROOT/pyproject.toml" ]; then
+  # bootstrap always deploys the latest pushed code
+  if git -C "$REPO_ROOT" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    git -C "$REPO_ROOT" pull --ff-only -q || log "WARN: git pull failed (offline?) - using checkout state"
+  fi
   REPO="$REPO_ROOT"
 else
   REPO="${AECP_REPO:-$AECP_ROOT/aecp-repo}"
