@@ -422,6 +422,19 @@ if [ "$ok" != "1" ]; then
   die "AECP services not healthy; inspect: systemctl status 'aecp-*' + journalctl -u aecp-pulsar"
 fi
 
+log "waiting for component health (up to 3 min)"
+hok=0
+for i in $(seq 1 18); do
+  if "$VENV/bin/aecpctl" health --timeout 8 >/tmp/aecp-health.log 2>&1; then
+    ok=1; break
+  fi
+  sleep 10
+done
+tail -17 /tmp/aecp-health.log || true
+if [ "$ok" != "1" ]; then
+  die "health check failed post-install (see /tmp/aecp-health.log)"
+fi
+
 log "creating Solr collection aecp_docs (idempotent)"
 sudo -u "$AECP_USER" env AECP_SOLR_URL=http://127.0.0.1:8983 \
   "$VENV/bin/python" -c "
@@ -433,5 +446,4 @@ except Exception as e:
 print('solr ping:', ping('http://127.0.0.1:8983'))
 " || true
 
-"$VENV/bin/aecpctl" health --timeout 10 || die "health check failed post-install"
 log "PROVISION COMPLETE - next: scripts/e2e/run_all.sh"
