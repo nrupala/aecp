@@ -129,7 +129,7 @@ dl_dist "$ARCHIVE/flink/flink-$FLINK_VERSION" "flink-$FLINK_VERSION-bin-scala_2.
 dl_dist "$ARCHIVE/solr/solr/$SOLR_VERSION" "solr-$SOLR_VERSION.tgz" "solr"
 dl_dist "$ARCHIVE/ozone/$OZONE_VERSION" "ozone-$OZONE_VERSION.tar.gz" "ozone"
 dl_dist "$ARCHIVE/zeppelin/zeppelin-$ZEPPELIN_VERSION" "zeppelin-$ZEPPELIN_VERSION-bin-all.tgz" "zeppelin"
-dl_dist "$ARCHIVE/tomcat/tomcat-10/v$TOMCAT_VERSION" "apache-tomcat-$TOMCAT_VERSION.tar.gz" "tomcat"
+dl_dist "$ARCHIVE/tomcat/tomcat-10/v$TOMCAT_VERSION/bin" "apache-tomcat-$TOMCAT_VERSION.tar.gz" "tomcat"
 
 # guacamole-server from source (no apt package exists)
 if [ ! -x "$BIN/guacd" ]; then
