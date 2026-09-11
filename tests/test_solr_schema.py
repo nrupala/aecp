@@ -26,8 +26,9 @@ def test_field_type_payload_hnsw():
     ft = p["add-field-type"]
     assert ft["class"] == "solr.DenseVectorField"
     assert ft["vectorDimension"] == 512
-    assert ft["distanceFunction"] == "cosine"
-    assert ft["knnAlgorithm"] == "hnsw"
+    # Solr 10: knn/distanceFunction/knnAlgorithm are not type args anymore
+    assert "distanceFunction" not in ft
+    assert "knnAlgorithm" not in ft
 
 
 def test_create_collection_calls(monkeypatch):

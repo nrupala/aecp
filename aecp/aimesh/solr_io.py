@@ -17,14 +17,13 @@ DIMENSION = 512
 
 
 def field_type_payload(dimension: int = DIMENSION) -> dict[str, Any]:
+    # Solr 10 DenseVectorField: vectorDimension is the only init argument
+    # (knn/distanceFunction/knnAlgorithm were removed from the type schema)
     return {
         "add-field-type": {
             "name": "KnnVector",
             "class": "solr.DenseVectorField",
             "vectorDimension": dimension,
-            "distanceFunction": "cosine",
-            "knn": "true",
-            "knnAlgorithm": "hnsw",
         }
     }
 
