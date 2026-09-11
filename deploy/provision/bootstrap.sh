@@ -96,9 +96,13 @@ extract_tgz() {  # extract_tgz <tgz> <name>
 
 dl_dist() {  # dl_dist <url-without-filename> <filename> <name>
   local base="$1" file="$2" name="$3"
+  if [ -d "$APPS/$name" ] && [ -f "$APPS/$name/.aecp-installed" ]; then
+    log "extracted: $name"; return 0
+  fi
   fetch "$base/$file" "$DL/$file"
-  fetch "$base/$file.sha512" "$DL/$file.sha512"
-  sha_ok "$DL/$file" "$DL/$file.sha512"
+  if fetch_soft "$base/$file.sha512" "$DL/$file.sha512"; then
+    sha_ok "$DL/$file" "$DL/$file.sha512"
+  fi
   extract_tgz "$DL/$file" "$name"
 }
 
