@@ -145,10 +145,15 @@ def render_units(paths: Paths | None = None,
         f"Environment=OZONE_HOME={apps}/ozone\n"
         f"Environment=OZONE_LOG_DIR={data}/ozone/log\n"
     )
+    ozone_env = (
+        f"Environment=OZONE_HOME={apps}/ozone\n"
+        f"Environment=OZONE_LOG_DIR={data}/ozone/log\n"
+    )
+    prefer_v4 = "-Djava.net.preferIPv4Stack=true"
     u = comps["ozone-scm"]
     units[u.unit] = _svc(
         u, "network-online.target", jenv,
-        ozone_env + "Environment=OZONE_OPTS=-Xmx256m\n",
+        ozone_env + f"Environment=OZONE_OPTS=-Xmx256m {prefer_v4}\n",
         f"{apps}/ozone/bin/ozone scm",
         None, apps + "/ozone",
     )
@@ -156,7 +161,7 @@ def render_units(paths: Paths | None = None,
     u = comps["ozone-om"]
     units[u.unit] = _svc(
         u, "network-online.target aecp-ozone-scm.service", jenv,
-        ozone_env + "Environment=OZONE_OPTS=-Xmx256m\n",
+        ozone_env + f"Environment=OZONE_OPTS=-Xmx256m {prefer_v4}\n",
         f"{apps}/ozone/bin/ozone om",
         None, apps + "/ozone",
     )
@@ -170,7 +175,7 @@ def render_units(paths: Paths | None = None,
         after = "aecp-ozone-om.service" if key == "ozone-s3g" else "aecp-ozone-scm.service"
         units[u.unit] = _svc(
             u, f"network-online.target {after}", jenv,
-            ozone_env + f"Environment=OZONE_OPTS={heap}\n",
+            ozone_env + f"Environment=OZONE_OPTS={heap} {prefer_v4}\n",
             f"{apps}/ozone/bin/ozone {svc}",
             None, apps + "/ozone",
         )
