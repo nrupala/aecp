@@ -46,7 +46,7 @@ source "$REPO_ROOT/deploy/versions.env" 2>/dev/null \
 ARCHIVE="$APACHE_ARCHIVE"
 GUAC_BASE="https://downloads.apache.org/guacamole/$GUACAMOLE_VERSION"
 MAVEN="$MAVEN_BASE"
-REQUIRED_PORTS="6650 8091 3181 2181 8082 6122 6123 8983 9876 9862 9863 9864 9878 9888 8083 8087 8090 4822 8847 8815"
+REQUIRED_PORTS="6650 8091 3181 2181 8082 6122 6123 8983 9876 9877 9860 9861 9863 9862 9865 9872 9878 9888 9891 9864 9856 9857 9859 9882 8083 8087 8090 4822 8847 8815"
 
 # ------------------------------------------------------------------ helpers
 log() { echo "[aecp $(date -u +%H:%M:%S)] $*"; }
@@ -205,22 +205,28 @@ EOF
 mkdir -p "$DATA_ROOT/solr/server" "$DATA_ROOT/solr/log"
 cp -r "$APPS/solr/server/solr/." "$DATA_ROOT/solr/server/"
 
-# Ozone
+# Ozone (2.2 port layout: SCM client RPC 9860, datanode RPC 9861, block RPC
+# 9863, SCM web UI 9877, OM RPC 9862, OM web UI 9865, S3G 9878, Recon 9888/9891)
 mkdir -p "$DATA_ROOT/ozone/log" "$DATA_ROOT/ozone/meta" "$DATA_ROOT/ozone/dn-data"
 cat > "$APPS/ozone/etc/hadoop/ozone-site.xml" <<EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
   <property><name>ozone.scm.names</name><value>127.0.0.1</value></property>
   <property><name>ozone.scm.address</name><value>127.0.0.1:9876</value></property>
+  <property><name>ozone.scm.http-address</name><value>0.0.0.0:9877</value></property>
   <property><name>ozone.scm.block.client.address</name><value>127.0.0.1:9876</value></property>
   <property><name>ozone.scm.client.address</name><value>127.0.0.1:9876</value></property>
   <property><name>ozone.om.address</name><value>127.0.0.1:9862</value></property>
-  <property><name>ozone.om.http-address</name><value>127.0.0.1:9863</value></property>
+  <property><name>ozone.om.http-address</name><value>127.0.0.1:9865</value></property>
   <property><name>ozone.recon.address</name><value>127.0.0.1:9888</value></property>
+  <property><name>ozone.recon.http-address</name><value>0.0.0.0:9891</value></property>
   <property><name>ozone.metadata.dirs</name><value>$DATA_ROOT/ozone/meta</value></property>
   <property><name>ozone.scm.datanode.id.dir</name><value>$DATA_ROOT/ozone/meta</value></property>
   <property><name>ozone.datanode.data.dirs</name><value>$DATA_ROOT/ozone/dn-data</value></property>
   <property><name>ozone.replication</name><value>ONE</value></property>
+  <property><name>ozone.server.default.replication</name><value>1</value></property>
+  <property><name>ozone.server.default.replication.type</name><value>STANDALONE</value></property>
+  <property><name>hdds.scm.safemode.min.datanode</name><value>1</value></property>
   <property><name>ozone.scm.pipeline.limit</name><value>1</value></property>
 </configuration>
 EOF
