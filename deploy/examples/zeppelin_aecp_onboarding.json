@@ -1,0 +1,17 @@
+{
+  "name": "AECP Intelligent Onboarding",
+  "paragraphs": [
+    {
+      "title": "AECP Gateway health",
+      "text": "%python\nimport urllib.request, json\nr = urllib.request.urlopen(\"http://127.0.0.1:8847/healthz\", timeout=10)\nprint(json.dumps(json.loads(r.read()), indent=2))"
+    },
+    {
+      "text": "%python\nimport urllib.request, json\nq = {\"question\": \"how does AECP ingest telemetry?\"}\nreq = urllib.request.Request(\n    \"http://127.0.0.1:8847/v1/chat\",\n    data=json.dumps(q).encode(),\n    headers={\"Content-Type\": \"application/json\"})\nr = urllib.request.urlopen(req, timeout=30)\na = json.loads(r.read())\nprint(a[\"answer\"])\nfor s in a[\"sources\"]:\n    print(f\"  - {s['title']} (score={s['score']})\")",
+      "title": "Ask the AECP knowledge base (Solr kNN RAG)"
+    },
+    {
+      "text": "%python\n# Stream check: publish a probe message through the AECP streaming fabric\nfrom aecp.streaming.pulsar_io import produce, message_batch\nprint(produce(\"pulsar://127.0.0.1:6650\", \"ae-probe\", message_batch(10)))",
+      "title": "Streaming fabric probe (Pulsar)"
+    }
+  ]
+}

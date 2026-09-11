@@ -1,0 +1,2 @@
+An attempt to develop complete tooling and pipeline as per apache software foundation's products and nothing else. link to all ASF material is :
+https://notebook.google.com/notebook/6f8e6198-4f57-42bd-b593-d41dd268f25f
