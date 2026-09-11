@@ -42,7 +42,7 @@ export AECP_JAVA_HOME="$JAVA_HOME" AECP_APPS="$APPS" AECP_DATA="$DATA_ROOT" \
 source "$REPO_ROOT/deploy/versions.env" 2>/dev/null \
   || source "$SCRIPT_DIR/../versions.env"
 
-ARCHIVE="$APACHE_ARCHIVE/dist"
+ARCHIVE="$APACHE_ARCHIVE"
 GUAC_BASE="https://downloads.apache.org/guacamole/$GUACAMOLE_VERSION"
 MAVEN="$MAVEN_BASE"
 REQUIRED_PORTS="6650 8091 3181 2181 8082 6122 6123 8983 9876 9862 9863 9864 9878 9888 8083 8088 8090 4822 8847 8815"
@@ -133,9 +133,9 @@ dl_dist "$ARCHIVE/tomcat/tomcat-10/v$TOMCAT_VERSION" "apache-tomcat-$TOMCAT_VERS
 # guacamole-server from source (no apt package exists)
 if [ ! -x "$BIN/guacd" ]; then
   log "building guacamole-server $GUACAMOLE_VERSION"
-  fetch "$GUAC_BASE/1.6.0/source/guacamole-server-$GUACAMOLE_VERSION.tar.gz" \
+  fetch "$GUAC_BASE/source/guacamole-server-$GUACAMOLE_VERSION.tar.gz" \
         "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz"
-  fetch "$GUAC_BASE/1.6.0/source/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" \
+  fetch "$GUAC_BASE/source/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" \
         "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" || true
   if [ -s "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" ]; then
     sha_ok "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz" \
@@ -156,7 +156,7 @@ fetch "$MAVEN/org/apache/pulsar/pulsar-client-all/$PULSAR_VERSION/pulsar-client-
       "$APPS/flink/lib/pulsar-client-all.jar"
 
 # Guacamole client WAR
-fetch "$GUAC_BASE/1.6.0/binary/guacamole-$GUACAMOLE_VERSION.war" "$DL/guacamole.war"
+fetch "$GUAC_BASE/binary/guacamole-$GUACAMOLE_VERSION.war" "$DL/guacamole.war"
 
 # reclaim disk: verified tarballs are extracted
 rm -f "$DL"/apache-pulsar-*.tar.gz* "$DL"/flink-*.tgz* "$DL"/solr-*.tgz* \
