@@ -292,12 +292,13 @@ log "installing python packages (aecp)"
 # 2.x; pandas<2.1 has no py3.12 wheels for 5.x). Dedicated venv on 3.11 (uv)
 # with the mature apache-superset 5.0.0.
 SVENV="${AECP_SUPERSET_VENV:-$AECP_ROOT/venv-superset}"
+# uv is installed via pip into the main venv (absolute path, no PATH fragility)
+if [ ! -x "$VENV/bin/uv" ]; then
+  "$VENV/bin/pip" install --quiet uv || die "uv install failed"
+fi
+UV="$VENV/bin/uv"
 if [ ! -x "$SVENV/bin/python" ]; then
-  if ! command -v uv >/dev/null 2>&1; then
-    curl -LsSf https://astral.sh/uv/install.sh | sh
-    export PATH="$HOME/.local/bin:$PATH"
-  fi
-  uv venv --python 3.11 --clear "$SVENV" || die "uv venv (py3.11) for superset failed"
+  "$VENV/bin/uv" venv --python 3.11 --clear "$SVENV" || die "uv venv (py3.11) for superset failed"
 fi
 # python-geohash (superset dep) has no aarch64 wheels and needs a modern
 # Rust toolchain (system cargo is too old for its Cargo.lock).
@@ -307,9 +308,9 @@ if ! "$HOME/.cargo/bin/rustc" --version >/dev/null 2>&1; then
 fi
 export PATH="$HOME/.cargo/bin:$PATH"
 log "installing apache-superset==5.0.0 into dedicated venv (py3.11)"
-uv pip install --python "$SVENV/bin/python" "apache-superset==5.0.0" \
+"$VENV/bin/uv" pip install --python "$SVENV/bin/python" "apache-superset==5.0.0" \
   || die "apache-superset install failed"
-uv pip install --python "$SVENV/bin/python" "gunicorn" || die "gunicorn install failed"
+"$VENV/bin/uv" pip install --python "$SVENV/bin/python" "gunicorn" || die "gunicorn install failed"
 # keep the main venv clean of the broken 6.x attempt
 /opt/aecp/venv/bin/pip uninstall -y apache-superset >/dev/null 2>&1 || true
 export AECP_SUPERSET_VENV="$SVENV"
