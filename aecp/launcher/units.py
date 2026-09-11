@@ -8,6 +8,7 @@ the AECP specification calls for (ADR-0001, ADR-0003).
 
 from __future__ import annotations
 
+import os
 from dataclasses import dataclass
 
 from aecp.spec import Component, deployment_components
