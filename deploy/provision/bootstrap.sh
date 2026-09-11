@@ -62,6 +62,19 @@ fetch() {  # fetch <url> <dest>
   mv "$dest.part" "$dest"
 }
 
+fetch_soft() {  # fetch_soft <url> <dest>  (non-fatal; for optional checksum sidecars)
+  local url="$1" dest="$2"
+  if [ -s "$dest" ]; then return 0; fi
+  mkdir -p "$(dirname "$dest")"
+  if ! curl -fSL --retry 3 --retry-delay 5 --connect-timeout 30 \
+       -o "$dest.part" "$url" 2>/dev/null; then
+    rm -f "$dest.part"
+    log "WARN: optional download unavailable: $url"
+    return 1
+  fi
+  mv "$dest.part" "$dest"
+}
+
 sha_ok() {  # sha_ok <file> <sha512-file>
   local f="$1" sums="$2" hash
   [ -s "$sums" ] || { log "WARN: no sha512 for $(basename "$f") (skipping verify)"; return 0; }
@@ -136,9 +149,8 @@ if [ ! -x "$BIN/guacd" ]; then
   log "building guacamole-server $GUACAMOLE_VERSION"
   fetch "$GUAC_BASE/source/guacamole-server-$GUACAMOLE_VERSION.tar.gz" \
         "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz"
-  fetch "$GUAC_BASE/source/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" \
-        "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" || true
-  if [ -s "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" ]; then
+  if fetch_soft "$GUAC_BASE/source/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512" \
+        "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512"; then
     sha_ok "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz" \
            "$DL/guacamole-server-$GUACAMOLE_VERSION.tar.gz.sha512"
   fi
