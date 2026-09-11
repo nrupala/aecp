@@ -32,9 +32,12 @@ class OzoneConfig:
         return {
             "uri": f"sqlite:///{self.catalog_db}",
             "warehouse": self.warehouse,
-            # fsspec/s3fs fileio: single-put for small files (pyarrow's S3
-            # output streams always complete multipart uploads, which Ozone
-            # S3 gateway rejects for zero-part payloads)
+            # fsspec/s3fs fileio pinned explicitly: single-put for small files.
+            # (a) pyarrow S3 output streams always complete multipart uploads,
+            # which Ozone S3 gateway rejects for zero-part payloads; (b) the
+            # catalog DB persists py-io-impl, so the default must be overridden
+            # explicitly to stay deterministic.
+            "py-io-impl": "pyiceberg.io.fsspec.FsspecFileIO",
             "s3.endpoint": self.s3_endpoint,
             "s3.access-key-id": self.access_key,
             "s3.secret-access-key": self.secret_key,
