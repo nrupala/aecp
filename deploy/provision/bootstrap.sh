@@ -227,7 +227,7 @@ cat > "$APPS/ozone/etc/hadoop/ozone-site.xml" <<EOF
   <property><name>ozone.scm.http-address</name><value>0.0.0.0:9877</value></property>
   <property><name>ozone.om.address</name><value>127.0.0.1:9862</value></property>
   <property><name>ozone.om.http-address</name><value>127.0.0.1:9865</value></property>
-  <property><name>ozone.recon.address</name><value>127.0.0.1:9888</value></property>
+  <property><name>ozone.recon.address</name><value>127.0.0.1:9890</value></property>
   <property><name>ozone.recon.http-address</name><value>0.0.0.0:9891</value></property>
   <property><name>ozone.metadata.dirs</name><value>$DATA_ROOT/ozone/meta</value></property>
   <property><name>ozone.scm.datanode.id.dir</name><value>$DATA_ROOT/ozone/meta</value></property>

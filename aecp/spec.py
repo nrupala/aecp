@@ -189,7 +189,7 @@ COMPONENTS: dict[str, Component] = {
                     (9878,), "http://127.0.0.1:9878/",
                     "384M", "S3-compatible endpoint for Iceberg fileio"),
     "ozone-recon": _c("Apache Ozone Recon", Layer.STORAGE, "aecp-ozone-recon.service",
-                      (9891,), "http://127.0.0.1:9891/api/summary",
+                      (9891, 9890), "http://127.0.0.1:9891/api/summary",
                       "384M", "Cluster observability"),
     # L4 memory plane
     "arrow-flight": _c("Arrow Flight data plane", Layer.MEMORY_PLANE, "aecp-arrow-flight.service",
