@@ -297,8 +297,15 @@ if [ ! -x "$SVENV/bin/python" ]; then
     curl -LsSf https://astral.sh/uv/install.sh | sh
     export PATH="$HOME/.local/bin:$PATH"
   fi
-  uv venv --python 3.11 "$SVENV" || die "uv venv (py3.11) for superset failed"
+  uv venv --python 3.11 --clear "$SVENV" || die "uv venv (py3.11) for superset failed"
 fi
+# python-geohash (superset dep) has no aarch64 wheels and needs a modern
+# Rust toolchain (system cargo is too old for its Cargo.lock).
+if ! "$HOME/.cargo/bin/rustc" --version >/dev/null 2>&1; then
+  curl -sSf https://sh.rustup.rs | sh -s -- -y --default-toolchain stable \
+    --profile minimal >/dev/null 2>&1 || log "WARN: rustup unavailable"
+fi
+export PATH="$HOME/.cargo/bin:$PATH"
 log "installing apache-superset==5.0.0 into dedicated venv (py3.11)"
 uv pip install --python "$SVENV/bin/python" "apache-superset==5.0.0" \
   || die "apache-superset install failed"
