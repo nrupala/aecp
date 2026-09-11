@@ -79,7 +79,6 @@ def knn_query(solr_url: str, collection: str, vector: list[float],
         "filter": [f"{{!knn f={VECTOR_FIELD} topK={top_k}}}{json.dumps(vector)}"],
         "fields": fl.split(","),
         "limit": top_k,
-        "params": {"defType": "json"},
     }
     r = requests_post(f"{solr_url}/solr/{collection}/query", json=body, timeout=timeout)
     if not r.ok:

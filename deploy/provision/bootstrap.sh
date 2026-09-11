@@ -212,6 +212,8 @@ EOF
 # Solr home under data
 mkdir -p "$DATA_ROOT/solr/server" "$DATA_ROOT/solr/log"
 cp -r "$APPS/solr/server/solr/." "$DATA_ROOT/solr/server/"
+# Iceberg catalog metadata dir
+mkdir -p "$DATA_ROOT/iceberg"
 
 # Ozone (2.2 port layout: SCM client RPC 9860, datanode RPC 9861, block RPC
 # 9863, SCM web UI 9877, OM RPC 9862, OM web UI 9865, S3G 9878, Recon 9888/9891)

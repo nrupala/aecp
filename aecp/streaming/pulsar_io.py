@@ -45,7 +45,6 @@ def produce(service_url: str, topic: str, messages: list[dict[str, Any]],
             send_timeout_millis=send_timeout_ms,
             batching_enabled=True,
             batching_max_messages=500,
-            batching_max_publish_delay=20,
         )
         t0 = time.perf_counter()
         for m in messages:
