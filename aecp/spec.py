@@ -229,7 +229,7 @@ RESERVED_FOREIGN_PORTS = frozenset({8080, 8081, 8192, 8830, 8835, 8888, 9700, 22
 def deployment_components() -> dict[str, Component]:
     """Components started by the reference deployment, in start order."""
     order = [
-        "pulsar", "flink-jm", "flink-tm",
+        "pulsar", "flink-jm", "flink-tm", "flink-sqlgw",
         "ozone-scm", "ozone-om", "ozone-dn", "ozone-s3g", "ozone-recon",
         "solr", "arrow-flight", "gateway",
         "zeppelin", "superset", "guacd", "guacamole",
