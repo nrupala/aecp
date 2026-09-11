@@ -237,6 +237,7 @@ cat > "$APPS/ozone/etc/hadoop/ozone-site.xml" <<EOF
   <property><name>ozone.server.default.replication.type</name><value>RATIS</value></property>
   <property><name>hdds.scm.safemode.min.datanode</name><value>1</value></property>
   <property><name>ozone.scm.pipeline.limit</name><value>1</value></property>
+  <property><name>hdds.prometheus.endpoint.enabled</name><value>false</value></property>
 </configuration>
 EOF
 
