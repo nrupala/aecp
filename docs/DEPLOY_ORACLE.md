@@ -28,7 +28,7 @@ scripts/e2e/run_all.sh
 | Port | Service |
 |------|---------|
 | 8083 | Zeppelin |
-| 8088 | Superset |
+| 8087 | Superset |
 | 8090 | Guacamole |
 | 8847 | AECP Gateway |
 

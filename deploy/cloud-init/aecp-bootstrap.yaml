@@ -18,5 +18,5 @@ final_message: |
   When complete, verify with: /opt/aecp/venv/bin/aecpctl health
   Gateway:   http://<host>:8847/healthz
   Zeppelin:  http://<host>:8083
-  Superset:  http://<host>:8088  (admin password in /var/lib/aecp/superset/admin.txt)
+  Superset:  http://<host>:8087  (admin password in /var/lib/aecp/superset/admin.txt)
   Guacamole: http://<host>:8090/guacamole  (aecpadmin, password in /var/lib/aecp/guacamole/credentials.txt)

@@ -199,7 +199,7 @@ COMPONENTS: dict[str, Component] = {
                    (8083,), "http://127.0.0.1:8083/#/",
                    "768M", "Multi-user development notebooks"),
     "superset": _c("Apache Superset", Layer.INTERFACES, "aecp-superset.service",
-                   (8088,), "http://127.0.0.1:8088/health",
+                   (8087,), "http://127.0.0.1:8087/health",
                    "1280M", "Geospatial BI dashboards"),
     "guacamole": _c("Apache Guacamole (Tomcat)", Layer.INTERFACES, "aecp-guacamole.service",
                     (8090,), "http://127.0.0.1:8090/guacamole/",

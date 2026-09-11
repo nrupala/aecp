@@ -214,7 +214,7 @@ def render_units(paths: Paths | None = None,
         u, "network-online.target", jenv,
         f"Environment=SUPERSET_CONFIG_PATH={data}/superset/superset_config.py\n"
         f"Environment=PYTHONPATH={p.repo}\n",
-        f"{venv}/bin/gunicorn --workers 2 --timeout 120 --bind 0.0.0.0:8088 "
+        f"{venv}/bin/gunicorn --workers 2 --timeout 120 --bind 0.0.0.0:8087 "
         f"\"superset.app:create_app()\"",
         None, f"{data}/superset",
     )

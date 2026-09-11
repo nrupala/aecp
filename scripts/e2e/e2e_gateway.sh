@@ -46,7 +46,7 @@ check() {  # check <name> <url>
   [ "$code" -ge 200 ] && [ "$code" -lt 500 ]
 }
 check "zeppelin"  "http://127.0.0.1:8083/"
-check "superset"  "http://127.0.0.1:8088/health"
+check "superset"  "http://127.0.0.1:8087/health"
 check "guacamole" "http://127.0.0.1:8090/guacamole/"
 
 echo "L6 PASS: gateway RAG loop + all three interfaces up"
