@@ -353,7 +353,15 @@ if [ ! -f "$DATA_ROOT/ozone/.scm-initialized" ]; then
   touch "$DATA_ROOT/ozone/.scm-initialized"
   chown "$AECP_USER" "$DATA_ROOT/ozone/.scm-initialized"
 fi
+log "starting Ozone SCM (OM init requires a running SCM)"
+systemctl enable --now aecp-ozone-scm.service
+for i in $(seq 1 30); do
+  ss -tln | grep -qE ':9876 ' && break
+  sleep 2
+done
+ss -tln | grep -qE ':9876 ' || die "SCM port 9876 never came up"
 if [ ! -f "$DATA_ROOT/ozone/.om-initialized" ]; then
+  rm -rf "$DATA_ROOT/ozone/meta/om" 2>/dev/null || true
   log "initializing Ozone OM"
   sudo -u "$AECP_USER" env OZONE_HOME="$APPS/ozone" JAVA_HOME="$JAVA_HOME" \
     "$OZ" om --init || die "ozone om --init failed (see above)"
