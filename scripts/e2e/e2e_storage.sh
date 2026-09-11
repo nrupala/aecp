@@ -10,14 +10,15 @@ export OZONE_HOME="${AECP_APPS:-/opt/aecp/apps}/ozone"
 export JAVA_HOME="${AECP_JAVA_HOME:-/usr/lib/jvm/java-17-openjdk-arm64}"
 
 echo "== [L2.0] Ozone S3 bucket for Iceberg warehouse =="
+# S3 gateway maps buckets into the volume named by ozone.s3g.volume.name (s3v)
 if ! sudo -u aecp env OZONE_HOME="$OZONE_HOME" JAVA_HOME="$JAVA_HOME" \
-     "$OZ" sh bucket info /s3/aecpiceberg >/dev/null 2>&1; then
+     "$OZ" sh bucket info /s3v/aecpiceberg >/dev/null 2>&1; then
   sudo -u aecp env OZONE_HOME="$OZONE_HOME" JAVA_HOME="$JAVA_HOME" \
-    "$OZ" sh volume create /s3 || true
+    "$OZ" sh volume create /s3v || true
   sudo -u aecp env OZONE_HOME="$OZONE_HOME" JAVA_HOME="$JAVA_HOME" \
-    "$OZ" sh bucket create /s3/aecpiceberg || true
+    "$OZ" sh bucket create /s3v/aecpiceberg || true
 fi
-"$OZ" sh bucket list /s3 2>/dev/null | grep -q aecpiceberg || true
+"$OZ" sh bucket list /s3v 2>/dev/null | grep -q aecpiceberg || true
 
 echo "== [L2.1] PyIceberg over Ozone: create/append/freeze/time-travel =="
 sudo -u aecp "$VENV/bin/python" <<'PY'
@@ -38,6 +39,6 @@ PY
 
 echo "== [L2.2] data files physically in Ozone =="
 sudo -u aecp env OZONE_HOME="$OZONE_HOME" JAVA_HOME="$JAVA_HOME" \
-  "$OZ" sh key list /s3/aecpiceberg --prefix aecp-warehouse | head -8 || true
+  "$OZ" sh key list /s3v/aecpiceberg --prefix aecp-warehouse | head -8 || true
 
 echo "L2 PASS: Iceberg tables over Apache Ozone (ACID + snapshot freeze + time travel)"
