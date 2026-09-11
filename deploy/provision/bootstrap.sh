@@ -211,6 +211,7 @@ rest.port: 8082
 jobmanager.memory.process.size: 640m
 taskmanager.memory.process.size: 1240m
 taskmanager.numberOfTaskSlots: 2
+sql-gateway.endpoint.rest.enabled: false
 EOF
 
 # Solr home under data
