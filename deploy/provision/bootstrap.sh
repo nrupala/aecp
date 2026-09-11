@@ -405,7 +405,8 @@ if [ "${AECP_SKIP_START:-0}" = "1" ] || [ "${1:-}" = "--skip-start" ]; then
 fi
 
 log "starting AECP target"
-systemctl enable --now aecp.target
+systemctl enable aecp.target >/dev/null 2>&1 || true
+systemctl restart aecp.target
 log "waiting for services (up to 6 min)"
 ok=0
 for i in $(seq 1 36); do
