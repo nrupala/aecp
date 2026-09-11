@@ -110,6 +110,12 @@ dl_dist() {  # dl_dist <url-without-filename> <filename> <name>
 [ "$(id -u)" -eq 0 ] || die "run as root (sudo)"
 [ -e /etc/debian_version ] || die "requires Debian/Ubuntu"
 command -v ss >/dev/null 2>&1 || apt-get update -qq
+# stop any previous AECP services so preflight sees a clean port space
+systemctl stop aecp.target 2>/dev/null || true
+for u in $(systemctl list-units --type=service 'aecp-*' --no-legend 2>/dev/null | awk '{print $1}'); do
+  systemctl stop "$u" 2>/dev/null || true
+done
+sleep 2
 for p in $REQUIRED_PORTS; do
   if ss -tln | awk '{print $4}' | grep -qE ":$p\$"; then
     die "port $p already in use on this host - refusing to install"
