@@ -16,10 +16,10 @@ SOLR = "http://127.0.0.1:8983"
 emb = resolve_embedder("auto", 512)
 print("embedder:", emb.name())
 
-try:
-    print(solr_io.create_collection(SOLR))
-except Exception as e:
-    print("create_collection (may exist):", e)
+solr_io.delete_collection(SOLR)
+import time
+time.sleep(2)
+print(solr_io.create_collection(SOLR))
 
 DOCS = [
     {"id": "pulsar-1", "title": "Pulsar durable messaging",

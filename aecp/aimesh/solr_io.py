@@ -36,11 +36,20 @@ def field_payload(dimension: int = DIMENSION) -> dict[str, Any]:
             "type": "KnnVector",
             "stored": True,
             "indexed": True,
-            "uninvertible": False,
             "multiValued": False,
-            "vectorDimension": dimension,
         }
     }
+
+
+def delete_collection(solr_url: str, collection: str = "aecp_docs",
+                      timeout: float = 60.0) -> bool:
+    """Remove a collection (used to reset schema before recreate)."""
+    r = requests_get(
+        f"{solr_url}/solr/admin/collections",
+        params={"action": "DELETE", "name": collection},
+        timeout=timeout,
+    )
+    return bool(r.ok)
 
 
 def create_collection(solr_url: str, collection: str = "aecp_docs",
