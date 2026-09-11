@@ -236,13 +236,16 @@ FEATURE_FLAGS = {"ALERT_REPORTS": False}
 SUPERSET_WEBSERVER_TIMEOUT = 120
 EOF
 fi
-# apache-superset 6.x: default DATA_CACHE_CONFIG routes through
-# SupersetMetastoreCache, which crashes on create_app (internal kwarg skew).
-# NullCache override keeps create_app healthy on the reference model.
-grep -q CACHE_CONFIG "$DATA_ROOT/superset/superset_config.py" || \
+# apache-superset 6.x: default state caches route through SupersetMetastoreCache,
+# which crashes on create_app (internal kwarg skew). NullCache overrides keep
+# create_app healthy on the reference model (state lives in the metadata DB).
+grep -q EXPLORE_FORM_DATA_CACHE_CONFIG "$DATA_ROOT/superset/superset_config.py" || \
 cat >> "$DATA_ROOT/superset/superset_config.py" <<'EOF'
 CACHE_CONFIG = {"CACHE_TYPE": "NullCache"}
 DATA_CACHE_CONFIG = {"CACHE_TYPE": "NullCache"}
+THUMBNAIL_CACHE_CONFIG = {"CACHE_TYPE": "NullCache"}
+FILTER_STATE_CACHE_CONFIG = {"CACHE_TYPE": "NullCache"}
+EXPLORE_FORM_DATA_CACHE_CONFIG = {"CACHE_TYPE": "NullCache"}
 EOF
 
 # Tomcat base for Guacamole on 8090
