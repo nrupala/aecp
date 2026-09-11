@@ -234,7 +234,7 @@ cat > "$APPS/ozone/etc/hadoop/ozone-site.xml" <<EOF
   <property><name>ozone.datanode.data.dirs</name><value>$DATA_ROOT/ozone/dn-data</value></property>
   <property><name>ozone.replication</name><value>ONE</value></property>
   <property><name>ozone.server.default.replication</name><value>1</value></property>
-  <property><name>ozone.server.default.replication.type</name><value>STANDALONE</value></property>
+  <property><name>ozone.server.default.replication.type</name><value>RATIS</value></property>
   <property><name>hdds.scm.safemode.min.datanode</name><value>1</value></property>
   <property><name>ozone.scm.pipeline.limit</name><value>1</value></property>
 </configuration>
@@ -315,7 +315,15 @@ if [ ! -x "$VENV/bin/uv" ]; then
   "$VENV/bin/pip" install --quiet uv || die "uv install failed"
 fi
 UV="$VENV/bin/uv"
-if [ ! -x "$SVENV/bin/python" ]; then
+export UV_PYTHON_INSTALL_DIR="$AECP_ROOT/uv-python"
+PYTGT="$(readlink -f "$SVENV/bin/python" 2>/dev/null || echo none)"
+RECREATE_VENV=0
+case "$PYTGT" in
+  /root/*|/home/*) RECREATE_VENV=1 ;;
+esac
+if [ ! -x "$SVENV/bin/python" ] || [ "$RECREATE_VENV" = "1" ]; then
+  log "recreating superset venv (python target: $PYTGT)"
+  rm -rf "$SVENV"
   "$VENV/bin/uv" venv --python 3.11 --clear "$SVENV" || die "uv venv (py3.11) for superset failed"
 fi
 # python-geohash (superset dep) has no aarch64 wheels and needs a modern
