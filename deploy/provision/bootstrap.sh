@@ -354,7 +354,8 @@ if [ ! -f "$DATA_ROOT/ozone/.scm-initialized" ]; then
   chown "$AECP_USER" "$DATA_ROOT/ozone/.scm-initialized"
 fi
 log "starting Ozone SCM (OM init requires a running SCM)"
-systemctl enable --now aecp-ozone-scm.service
+systemctl enable aecp-ozone-scm.service >/dev/null 2>&1 || true
+systemctl restart aecp-ozone-scm.service
 for i in $(seq 1 30); do
   ss -tln | grep -qE ':9876 ' && break
   sleep 2
