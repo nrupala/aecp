@@ -10,8 +10,8 @@ Last updated: 2026-09-10
 | Gate | Description | Status | Evidence Command | Observed | Notes |
 |------|-------------|--------|------------------|----------|-------|
 | G0 | Build system | PASS | `pip install -e .` | exit 0; aecp installed, entry points created | pyproject.toml + hatchling |
-| G1 | Repeatable test suite | PENDING | `pytest -m "not integration"` | (to record) | unit suite runs anywhere; e2e on box |
-| G2 | Lint/typecheck | PENDING | `ruff check aecp tests && mypy aecp` | (to record) | |
+| G1 | Repeatable test suite | PASS | `python -m pytest -m "not integration"` | exit 0; **42 passed** (2026-09-10) | unit suite; integration/e2e runs on box |
+| G2 | Lint/typecheck | PASS | `ruff check aecp tests && mypy aecp` | exit 0; "All checks passed!" + "Success: no issues found in 20 source files" | ruff UP/B/SIM clean; mypy strict |
 | G3 | License | PASS | LICENSE + NOTICE present | canonical Apache-2.0 text (11,358 bytes from apache.org) + NOTICE | |
 | G4 | Contribution docs | PASS | CONTRIBUTING.md + CODE_OF_CONDUCT.md present | both present | |
 | G5 | Reproducible install/run | PENDING | `sudo deploy/provision/bootstrap.sh && aecpctl health` on Aetheris | (to record) | idempotent + sha512-verified |
