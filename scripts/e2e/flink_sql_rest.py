@@ -1,80 +1,71 @@
-"""Flink SQL Gateway REST driver: submit statements, poll results.
-
-Used by e2e_streaming (L3.2): creates the Pulsar source table, windowed
-filesystem sink, and submits the INSERT; returns the job id.
-"""
-
+"""Flink SQL Gateway REST driver (Flink 1.20)."""
 from __future__ import annotations
 
 import json
 import time
+import urllib.error
 import urllib.request
 
 GW = "http://127.0.0.1:8085"
+JM = "http://127.0.0.1:8082"
 
 
-def _post(path: str, payload: dict | None = None, timeout: int = 30) -> dict:
-    data = json.dumps(payload).encode() if payload is not None else b"{}"
-    req = urllib.request.Request(f"{GW}{path}", data,
-                                 {"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return json.loads(r.read())
+def _req(method: str, path: str, payload: dict | None = None, timeout: int = 30):
+    data = json.dumps(payload).encode() if payload is not None else None
+    r = urllib.request.Request(
+        GW + path, data=data, method=method,
+        headers={"Content-Type": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(r, timeout=timeout) as resp:
+            body = resp.read()
+            return json.loads(body) if body else {}
+    except urllib.error.HTTPError as e:
+        return {"_error": e.code, "_body": e.read().decode(errors="replace")}
 
 
 def open_session() -> str:
-    return _post("/v1/sessions")["sessionHandle"]
+    return _req("POST", "/v1/sessions")["sessionHandle"]
 
 
-def submit(sid: str, statement: str) -> str:
-    """Submit a statement; returns operationHandle for queries/DDL or job id."""
-    r = _post(f"/v2/sessions/{sid}/statements", {"statement": statement})
-    return r["operationHandle"]
+def submit(sid: str, statement: str) -> dict:
+    return _req("POST", f"/v1/sessions/{sid}/statements", {"statement": statement})
 
 
-def fetch_result(sid: str, op: str, token: int = 0, timeout: int = 120) -> dict:
-    deadline = time.time() + timeout
-    last: dict = {}
-    while time.time() < deadline:
-        try:
-            with urllib.request.urlopen(
-                f"{GW}/v2/sessions/{sid}/operations/{sid}?token=0", timeout=10
-            ) as r:
-                last = json.loads(r.read())
-                break
-        except Exception as e:  # noqa: BLE001
-            last = {"error": str(e)}
-            time.sleep(1)
-    return last
+def status(sid: str, op: str) -> dict:
+    return _req("GET", f"/v1/sessions/{sid}/operations/{op}/status")
 
 
-def fetch_rows(sid: str, oid: str, token: int = 0) -> dict:
-    with urllib.request.urlopen(
-        f"/v1/sessions/{sid}/operations/{sid}/result/{token}", timeout=30
-    ) as r:
-        return json.loads(r.read())
+def result(sid: str, op: str, token: int = 0) -> dict:
+    return _req("GET", f"/v1/sessions/{sid}/operations/{op}/result/{token}")
 
 
-def submit_job(sid: str, statement: str, timeout: int = 60) -> str:
-    """Submit an INSERT and return the Flink job id once submitted."""
-    oid = submit(sid, statement)
+def jobs() -> list[dict]:
+    try:
+        with urllib.request.urlopen(f"{JM}/jobs", timeout=10) as r:
+            return json.loads(r.read()).get("jobs", [])
+    except Exception:  # noqa: BLE001
+        return []
+
+
+def running_job() -> dict | None:
+    for j in jobs():
+        if j.get("status") == "RUNNING":
+            return j
+    return None
+
+
+def submit_insert(sid: str, statement: str, timeout: int = 60) -> str:
+    op = submit(sid, statement)
+    opid = op.get("operationHandle", op)
     deadline = time.time() + timeout
     while time.time() < deadline:
-        try:
-            with urllib.request.urlopen(
-                f"/v1/sessions/{sid}/operations/{oid}/status", timeout=10
-            ) as r:
-                status = json.loads(r.read()).get("status")
-            if status in ("FINISHED", "CANCELED", "ERROR"):
-                raise RuntimeError(f"insert finished early: {status}")
-            # poll flink REST for the running job
-            with urllib.request.urlopen("http://127.0.0.1:8082/jobs", timeout=10) as r:
-                jobs = json.loads(r.read()).get("jobs", [])
-            running = [j for j in jobs if j.get("status") == "RUNNING"]
-            if running:
-                return running[0]["id"]
-        except RuntimeError:
-            raise
-        except Exception:
-            pass
+        s = status(sid, opid)
+        if s.get("status") == "FINISHED":
+            break
+        if s.get("status") in ("ERROR", "CANCELED"):
+            raise RuntimeError(f"insert {s}")
+        if running_job():
+            return running_job()["id"]
         time.sleep(2)
-    raise RuntimeError("job did not reach RUNNING state in time")
+    return running_job()["id"] if running_job() else "done"
