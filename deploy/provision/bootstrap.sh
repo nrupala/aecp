@@ -213,6 +213,8 @@ taskmanager.memory.process.size: 1240m
 taskmanager.numberOfTaskSlots: 2
 sql-gateway.endpoint.rest.address: 127.0.0.1
 sql-gateway.endpoint.rest.port: 8085
+sql-gateway.endpoint.rest.bind-address: 127.0.0.1
+sql-gateway.endpoint.rest.bind-port: 8085
 EOF
 
 # Solr home under data
