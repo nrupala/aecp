@@ -211,7 +211,6 @@ rest.port: 8082
 jobmanager.memory.process.size: 640m
 taskmanager.memory.process.size: 1240m
 taskmanager.numberOfTaskSlots: 2
-sql-gateway.endpoint.rest.enabled: true
 sql-gateway.endpoint.rest.address: 127.0.0.1
 sql-gateway.endpoint.rest.port: 8085
 EOF
