@@ -145,9 +145,7 @@ def render_units(paths: Paths | None = None,
     units[u.unit] = _svc(
         u, "network-online.target aecp-flink-jobmanager.service", jenv,
         f"Environment=FLINK_HOME={apps}/flink\n",
-        f"{apps}/flink/bin/sql-gateway.sh start-foreground "
-        f"-Dsql-gateway.endpoint.rest.address=127.0.0.1 "
-        f"-Dsql-gateway.endpoint.rest.port=8085",
+        f"{apps}/flink/bin/sql-gateway.sh start-foreground",
         None, apps + "/flink",
     )
 
