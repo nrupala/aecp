@@ -35,3 +35,13 @@ deliverable, and `ASFQC/GATES.md` when a gate changes state.
 - One logical change per PR; describe the verification performed.
 - New behavior requires new tests; regressions must keep their red/green proof.
 - Branches: `feat/<topic>`, `fix/<topic>`, `docs/<topic>`.
+
+
+## PR-flow discipline
+
+- **Draft PR → CI green → owner merges.** No direct pushes to `main`, ever
+  (CI is enforced by discipline; required status checks need a paid plan).
+- Every PR adds its CHANGELOG entry under `## [Unreleased]` and bumps the
+  version in `pyproject.toml` — patch for fixes/chores, minor for features.
+- Merge commits reference the PR number (e.g. `Merge pull request #42 ...`).
+- Releases are tagged `vX.Y.Z` after merge.

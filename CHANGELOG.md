@@ -2,6 +2,15 @@
 
 All notable changes. Format based on Keep a Changelog; versioning: SemVer.
 
+## [Unreleased]
+
+### Added
+
+- Portfolio certification rollout: PR-flow discipline in CONTRIBUTING.md
+  (draft PR -> CI green -> owner merges; CHANGELOG entry + semver bump per PR;
+  releases tagged vX.Y.Z). Signed-deploy survey: provisioning-only repo, no
+  signed-wrapper target. License verified: Apache-2.0, NOTICE present.
+
 ## [0.1.0] - 2026-09-10
 
 ### Added
