@@ -19,6 +19,7 @@ def make_local_config(tmp_path: pathlib.Path) -> iceberg_io.OzoneConfig:
         s3_endpoint="http://127.0.0.1:9878",
         warehouse=f"file://{tmp_path.as_posix()}/warehouse/",
         catalog_db=str(tmp_path / "catalog.db"),
+        secret_key="test-only-fixture",  # fixture, not a credential: shipped code takes the secret from AECP_S3_SECRET_KEY
     )
 
 

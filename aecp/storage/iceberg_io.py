@@ -9,11 +9,26 @@ operations here. REST-catalog upgrade path: ADR-0004.
 from __future__ import annotations
 
 import contextlib
+import os
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any
 
 import pyarrow as pa
+
+
+def _required_env(name: str) -> str:
+    """Read a required credential from the environment.
+
+    No default exists, by design: AECP credentials are never carried in
+    source. An unset variable is a loud, immediate failure.
+    """
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(
+            f"{name} is not set: AECP credentials come from the environment, never from source."
+        )
+    return value
 
 
 @dataclass
@@ -24,7 +39,7 @@ class OzoneConfig:
     warehouse: str = "s3a://aecp-iceberg/"
     catalog_db: str = "/var/lib/aecp/iceberg/catalog.db"
     access_key: str = "aecp"
-    secret_key: str = "aecp-secret"
+    secret_key: str = field(default_factory=lambda: _required_env("AECP_S3_SECRET_KEY"))
     region: str = "us-east-1"
     extra: dict[str, str] = field(default_factory=dict)
 

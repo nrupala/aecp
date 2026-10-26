@@ -1,7 +1,8 @@
 #!/bin/bash
 sudo -u aecp /opt/aecp/venv/bin/python - <<'PY'
+import os
 import s3fs
-fs = s3fs.S3FileSystem(key='aecp', secret='aecp-secret', client_kwargs={'endpoint_url': 'http://127.0.0.1:9878'})
+fs = s3fs.S3FileSystem(key='aecp', secret=os.environ['AECP_S3_SECRET_KEY'], client_kwargs={'endpoint_url': 'http://127.0.0.1:9878'})
 # binary write via open('wb') exactly like pyiceberg
 try:
     with fs.open('/aecpiceberg/probe_wb.bin', 'wb') as f:
