@@ -77,3 +77,16 @@ not license restrictions.
   no-Docker kernel primitives, Iceberg catalog)
 - `DEVELOPMENT_PROGRESS_TRACKER.md` — work log
 - `ASFQC/GATES.md` — gate tracker with evidence
+
+## Licence · Copyright · Privacy
+
+Copyright © 2026 2351485 ALBERTA INC.
+
+- **Licence:** [LICENSE](LICENSE) — Apache License, Version 2.0.
+  Licence map: [LICENSING.md](LICENSING.md).
+- **Commercial services:** [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md) —
+  the code is free under Apache-2.0; certified deployments, managed
+  operations, and support are the paid services.
+- **Privacy:** [PRIVACY.md](PRIVACY.md) — AECP deploys into your own
+  infrastructure, collects no telemetry, and sends no data to
+  2351485 ALBERTA INC.

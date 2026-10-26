@@ -23,3 +23,9 @@ Last updated: 2026-09-10
 
 | Date | Scope | User Rationale | Status |
 |------|-------|----------------|--------|
+
+## Notes
+
+| Date | Note |
+|------|------|
+| 2026-10-26 | Licence-package completion: PRIVACY.md added; NOTICE copyright holder corrected to 2351485 ALBERTA INC.; README gained a Licence · Copyright · Privacy section. Documentation only — no code changed. Verified by direct GitHub API read-back of repo contents and file heads. |
