@@ -90,3 +90,5 @@ Copyright © 2026 2351485 ALBERTA INC.
 - **Privacy:** [PRIVACY.md](PRIVACY.md) — AECP deploys into your own
   infrastructure, collects no telemetry, and sends no data to
   2351485 ALBERTA INC.
+- **Product terms:** [TERMS.md](TERMS.md) — terms for the packaged or
+  distributed version supplied by 2351485 ALBERTA INC.

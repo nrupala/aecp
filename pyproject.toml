@@ -9,7 +9,7 @@ description = "AECP: The 100% Apache Enterprise Computing Platform - deployable 
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
-authors = [{ name = "AECP Contributors" }]
+authors = [{ name = "2351485 ALBERTA INC." }]
 keywords = ["apache", "enterprise", "streaming", "ozone", "iceberg", "pulsar", "flink", "solr", "arrow", "zeppelin", "superset", "guacamole"]
 classifiers = [
     "Development Status :: 4 - Beta",
