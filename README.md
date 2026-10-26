@@ -92,3 +92,5 @@ Copyright © 2026 2351485 ALBERTA INC.
   2351485 ALBERTA INC.
 - **Product terms:** [TERMS.md](TERMS.md) — terms for the packaged or
   distributed version supplied by 2351485 ALBERTA INC.
+- **Security:** [SECURITY.md](SECURITY.md) — how to report a vulnerability
+  privately, and our response plan.
