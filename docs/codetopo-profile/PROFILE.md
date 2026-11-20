@@ -8,22 +8,16 @@ submits or changes anything. Read this first; the graph snapshot beside it
 
 - **Repo:** nrupala/aecp
 - **Commit profiled:** `613deb6a965821e214e666b63f43381879708066` (main)
-- **Engine:** codetopo 0.9.1 · index run 2026-11-18
-- **Graph:** 54 files walked · 0 failed · 674 nodes · 2002 edges · audit chain valid (3 entries, head `85d3194f…5eb17`)
-- **Nodes by kind:** class 35 · doc 23 · external 299 · file 54 · function 144 · interface 1 · method 23 · module 54 · package 1 · variable 40
-- **Edges by kind:** calls 669 · contains 374 · defines 68 · imports 112 · reads 736 · writes 43
+- **Engine:** codetopo 0.9.1 + full-language program (engine built from codetopo main `d71509d1` — all sixteen program extractors merged) · index run 2026-11-19
+- **Graph:** 83 files walked · 0 failed · 877 nodes · 2,503 edges · audit chain valid (3 entries, head `930365fe…f21b`)
+- **Nodes by kind:** external 363 · function 153 · variable 112 · file 83 · module 83 · class 35 · doc 23 · method 23 · interface 1 · package 1
+- **Edges by kind:** calls 895 · reads 863 · contains 513 · imports 112 · defines 73 · writes 47
 
 ## Coverage honesty
 
-Codetopo extracts Rust, TypeScript/JavaScript and Python, plus Markdown
-as Doc nodes. This repo's code is Python: the graph walks 54 files
-(the `aecp/` package, `tests/`, `scripts/e2e/`, deploy helper) at full
-symbol level. The 23 Markdown files are indexed as Doc nodes only.
-**Not covered:** the 29 Shell scripts (`deploy/`, `scripts/` — the
-provisioning and e2e evidence harness) are not parsed into the graph;
-read them directly. `deploy/versions.env`, YAML/TOML/JSON config and
-the ASFQC gate records are data/docs, not code — also not parsed.
+**Re-profiled 2026-11-19** with the full-language engine (Codetopo extractor program, 2026-11-18 ruling): every language this repo is written in is now extracted at symbol level. First profile: 2026-11-18 (Codetopo 0.9.1).
 
+Codetopo now extracts every language in the full-language program (Rust, TypeScript/JavaScript, Python, Kotlin, C, Java, Go, Shell, C++, Swift, Ruby, R, Julia, C#, PHP, Scala, Haskell, Elixir, Lua), plus Markdown as Doc nodes. The Python package is extracted at full symbol level as before, and the 29 Shell scripts (`deploy/`, `scripts/` — the provisioning and e2e evidence harness) named as not covered in the first profile are now parsed into the graph (Shell extractor, program PR #158). `deploy/versions.env`, YAML/TOML/JSON config and the ASFQC gate records are data/docs, not code — not parsed. Symbol coverage of the codebase is complete.
 ## Topology
 
 A deployable system model of an all-Apache enterprise stack

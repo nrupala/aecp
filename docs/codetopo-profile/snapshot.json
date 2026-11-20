@@ -4,7 +4,7 @@
   "profile_version": "1.0.0",
   "graph_class": "truths",
   "provenance_summary": {
-    "extracted_truth": 2002
+    "extracted_truth": 2503
   },
   "nodes": [
     {
@@ -416,11 +416,287 @@
       "refs": []
     },
     {
+      "id": "aecp::/deploy/provision/aetheris-launch.sh",
+      "kind": "file",
+      "label": "deploy/provision/aetheris-launch.sh",
+      "loc": {
+        "file": "deploy/provision/aetheris-launch.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/bootstrap.sh",
+      "kind": "file",
+      "label": "deploy/provision/bootstrap.sh",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "aecp::/deploy/provision/box_port_check.py",
       "kind": "file",
       "label": "deploy/provision/box_port_check.py",
       "loc": {
         "file": "deploy/provision/box_port_check.py",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_ice.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_ice.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_ice.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_io.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_io.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_io.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_io2.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_io2.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_io2.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_io3.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_io3.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_io3.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_mpu.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_mpu.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_mpu.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_perms.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_perms.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_perms.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_rec7.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_rec7.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_rec7.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_rec8.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_rec8.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_rec8.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_recj.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_recj.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_recj.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_recon.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_recon.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_recon.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_small.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_small.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_small.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_solr.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_solr.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_solr.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_solr2.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_solr2.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_solr2.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_solr3.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_solr3.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_solr3.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_solr4.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_solr4.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_solr4.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_solrhome.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_solrhome.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_solrhome.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_sync.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_sync.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_sync.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_trace.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_trace.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_trace.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_units.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_units.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_units.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/dbg_wb.sh",
+      "kind": "file",
+      "label": "deploy/provision/dbg_wb.sh",
+      "loc": {
+        "file": "deploy/provision/dbg_wb.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/deploy/provision/ozone_reset.sh",
+      "kind": "file",
+      "label": "deploy/provision/ozone_reset.sh",
+      "loc": {
+        "file": "deploy/provision/ozone_reset.sh",
         "line": 1
       },
       "tier": "core",
@@ -560,11 +836,83 @@
       "refs": []
     },
     {
+      "id": "aecp::/scripts/e2e/e2e_aimesh.sh",
+      "kind": "file",
+      "label": "scripts/e2e/e2e_aimesh.sh",
+      "loc": {
+        "file": "scripts/e2e/e2e_aimesh.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/scripts/e2e/e2e_gateway.sh",
+      "kind": "file",
+      "label": "scripts/e2e/e2e_gateway.sh",
+      "loc": {
+        "file": "scripts/e2e/e2e_gateway.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/scripts/e2e/e2e_memory.sh",
+      "kind": "file",
+      "label": "scripts/e2e/e2e_memory.sh",
+      "loc": {
+        "file": "scripts/e2e/e2e_memory.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/scripts/e2e/e2e_storage.sh",
+      "kind": "file",
+      "label": "scripts/e2e/e2e_storage.sh",
+      "loc": {
+        "file": "scripts/e2e/e2e_storage.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "kind": "file",
+      "label": "scripts/e2e/e2e_streaming.sh",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "aecp::/scripts/e2e/flink_sql_rest.py",
       "kind": "file",
       "label": "scripts/e2e/flink_sql_rest.py",
       "loc": {
         "file": "scripts/e2e/flink_sql_rest.py",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::/scripts/e2e/run_all.sh",
+      "kind": "file",
+      "label": "scripts/e2e/run_all.sh",
+      "loc": {
+        "file": "scripts/e2e/run_all.sh",
         "line": 1
       },
       "tier": "core",
@@ -4979,6 +5327,940 @@
       "decisions": 2
     },
     {
+      "id": "aecp::deploy::provision::aetheris-launch",
+      "kind": "module",
+      "label": "aecp::deploy::provision::aetheris-launch",
+      "loc": {
+        "file": "deploy/provision/aetheris-launch.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap",
+      "kind": "module",
+      "label": "aecp::deploy::provision::bootstrap",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_APPS",
+      "kind": "variable",
+      "label": "AECP_APPS",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 44
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "APPS"
+      ],
+      "end_line": 44,
+      "signature": "AECP_APPS"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_DATA",
+      "kind": "variable",
+      "label": "AECP_DATA",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 44
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "DATA_ROOT"
+      ],
+      "end_line": 44,
+      "signature": "AECP_DATA"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_JAVA_HOME",
+      "kind": "variable",
+      "label": "AECP_JAVA_HOME",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 44
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "JAVA_HOME"
+      ],
+      "end_line": 44,
+      "signature": "AECP_JAVA_HOME"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_REPO",
+      "kind": "variable",
+      "label": "AECP_REPO",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 45
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "REPO"
+      ],
+      "end_line": 45,
+      "signature": "AECP_REPO"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_REPO_URL",
+      "kind": "variable",
+      "label": "AECP_REPO_URL",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 33
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_REPO_URL"
+      ],
+      "end_line": 33,
+      "signature": "AECP_REPO_URL"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "variable",
+      "label": "AECP_ROOT",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 16
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_ROOT"
+      ],
+      "end_line": 16,
+      "signature": "AECP_ROOT"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_SUPERSET_VENV",
+      "kind": "variable",
+      "label": "AECP_SUPERSET_VENV",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 356
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "SVENV"
+      ],
+      "end_line": 356,
+      "signature": "AECP_SUPERSET_VENV"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_USER",
+      "kind": "variable",
+      "label": "AECP_USER",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 22
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_USER"
+      ],
+      "end_line": 22,
+      "signature": "AECP_USER"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "kind": "variable",
+      "label": "AECP_VENV",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 45
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "VENV"
+      ],
+      "end_line": 45,
+      "signature": "AECP_VENV"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::AEREPO",
+      "kind": "variable",
+      "label": "AEREPO",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 314
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_ROOT"
+      ],
+      "end_line": 314,
+      "signature": "AEREPO"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "variable",
+      "label": "APPS",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 17
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_ROOT"
+      ],
+      "end_line": 17,
+      "signature": "APPS"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::ARCH",
+      "kind": "variable",
+      "label": "ARCH",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 38
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "uname"
+      ],
+      "end_line": 38,
+      "signature": "ARCH"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::ARCHIVE",
+      "kind": "variable",
+      "label": "ARCHIVE",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 50
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "APACHE_ARCHIVE"
+      ],
+      "end_line": 50,
+      "signature": "ARCHIVE"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::BIN",
+      "kind": "variable",
+      "label": "BIN",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 20
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_ROOT"
+      ],
+      "end_line": 20,
+      "signature": "BIN"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::DATA_ROOT",
+      "kind": "variable",
+      "label": "DATA_ROOT",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 18
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_DATA"
+      ],
+      "end_line": 18,
+      "signature": "DATA_ROOT"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::DEBIAN_FRONTEND",
+      "kind": "variable",
+      "label": "DEBIAN_FRONTEND",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 137
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 137,
+      "signature": "DEBIAN_FRONTEND"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::DL",
+      "kind": "variable",
+      "label": "DL",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 21
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "APPS"
+      ],
+      "end_line": 21,
+      "signature": "DL"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::FLASK_APP",
+      "kind": "variable",
+      "label": "FLASK_APP",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 359
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 359,
+      "signature": "FLASK_APP"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::FREE_GB",
+      "kind": "variable",
+      "label": "FREE_GB",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 128
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "df",
+        "tail",
+        "tr"
+      ],
+      "end_line": 128,
+      "signature": "FREE_GB"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::GUAC_BASE",
+      "kind": "variable",
+      "label": "GUAC_BASE",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 51
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "GUACAMOLE_VERSION"
+      ],
+      "end_line": 51,
+      "signature": "GUAC_BASE"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::GUAC_PW",
+      "kind": "variable",
+      "label": "GUAC_PW",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 291
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "openssl"
+      ],
+      "end_line": 291,
+      "signature": "GUAC_PW"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::HASH",
+      "kind": "variable",
+      "label": "HASH",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 293
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "GUAC_PW",
+        "awk",
+        "printf",
+        "sha256sum"
+      ],
+      "end_line": 293,
+      "signature": "HASH"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::JAVA_HOME",
+      "kind": "variable",
+      "label": "JAVA_HOME",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 40
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_JAVA_HOME"
+      ],
+      "end_line": 40,
+      "signature": "JAVA_HOME"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::MAVEN",
+      "kind": "variable",
+      "label": "MAVEN",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 52
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "MAVEN_BASE"
+      ],
+      "end_line": 52,
+      "signature": "MAVEN"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::MEM_KB",
+      "kind": "variable",
+      "label": "MEM_KB",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 130
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "awk"
+      ],
+      "end_line": 130,
+      "signature": "MEM_KB"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::MEM_MB",
+      "kind": "variable",
+      "label": "MEM_MB",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 131
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "MEM_KB"
+      ],
+      "end_line": 131,
+      "signature": "MEM_MB"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::OZ",
+      "kind": "variable",
+      "label": "OZ",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 389
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "APPS"
+      ],
+      "end_line": 389,
+      "signature": "OZ"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::PATH",
+      "kind": "variable",
+      "label": "PATH",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 348
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "HOME",
+        "PATH"
+      ],
+      "end_line": 348,
+      "signature": "PATH"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::PYTGT",
+      "kind": "variable",
+      "label": "PYTGT",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 332
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "SVENV",
+        "echo",
+        "readlink"
+      ],
+      "end_line": 332,
+      "signature": "PYTGT"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::RECREATE_VENV",
+      "kind": "variable",
+      "label": "RECREATE_VENV",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 333
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 333,
+      "signature": "RECREATE_VENV"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::REPO",
+      "kind": "variable",
+      "label": "REPO",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 30
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "REPO_ROOT"
+      ],
+      "end_line": 30,
+      "signature": "REPO"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::REPO_ROOT",
+      "kind": "variable",
+      "label": "REPO_ROOT",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 24
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "SCRIPT_DIR",
+        "cd",
+        "pwd"
+      ],
+      "end_line": 24,
+      "signature": "REPO_ROOT"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::REQUIRED_PORTS",
+      "kind": "variable",
+      "label": "REQUIRED_PORTS",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 53
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 53,
+      "signature": "REQUIRED_PORTS"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::SCRIPT_DIR",
+      "kind": "variable",
+      "label": "SCRIPT_DIR",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 23
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "cd",
+        "dirname",
+        "pwd"
+      ],
+      "end_line": 23,
+      "signature": "SCRIPT_DIR"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::SSHPW",
+      "kind": "variable",
+      "label": "SSHPW",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 292
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "openssl"
+      ],
+      "end_line": 292,
+      "signature": "SSHPW"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::SS_KEY",
+      "kind": "variable",
+      "label": "SS_KEY",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 259
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "openssl"
+      ],
+      "end_line": 259,
+      "signature": "SS_KEY"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::SUPERSET_CONFIG_PATH",
+      "kind": "variable",
+      "label": "SUPERSET_CONFIG_PATH",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 358
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "DATA_ROOT"
+      ],
+      "end_line": 358,
+      "signature": "SUPERSET_CONFIG_PATH"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::SUP_PW",
+      "kind": "variable",
+      "label": "SUP_PW",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 363
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "openssl"
+      ],
+      "end_line": 363,
+      "signature": "SUP_PW"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::SVENV",
+      "kind": "variable",
+      "label": "SVENV",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 325
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_ROOT",
+        "AECP_SUPERSET_VENV"
+      ],
+      "end_line": 325,
+      "signature": "SVENV"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::TB",
+      "kind": "variable",
+      "label": "TB",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 280
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "APPS"
+      ],
+      "end_line": 280,
+      "signature": "TB"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::UV",
+      "kind": "variable",
+      "label": "UV",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 330
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "VENV"
+      ],
+      "end_line": 330,
+      "signature": "UV"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::UV_PYTHON_INSTALL_DIR",
+      "kind": "variable",
+      "label": "UV_PYTHON_INSTALL_DIR",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 331
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_ROOT"
+      ],
+      "end_line": 331,
+      "signature": "UV_PYTHON_INSTALL_DIR"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::VENV",
+      "kind": "variable",
+      "label": "VENV",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 19
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_ROOT",
+        "AECP_VENV"
+      ],
+      "end_line": 19,
+      "signature": "VENV"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::die",
+      "kind": "function",
+      "label": "die",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 57
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "echo",
+        "exit"
+      ],
+      "end_line": 57,
+      "signature": "die()",
+      "decisions": 0
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::dl_dist",
+      "kind": "function",
+      "label": "dl_dist",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 101
+      },
+      "tier": "optional",
+      "defines": [
+        "base",
+        "file",
+        "name"
+      ],
+      "refs": [
+        "APPS",
+        "DL",
+        "extract_tgz",
+        "fetch",
+        "fetch_soft",
+        "log",
+        "return",
+        "sha_ok"
+      ],
+      "end_line": 111,
+      "signature": "dl_dist()",
+      "decisions": 3
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "kind": "function",
+      "label": "extract_tgz",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 90
+      },
+      "tier": "optional",
+      "defines": [
+        "name",
+        "tgz"
+      ],
+      "refs": [
+        "AECP_USER",
+        "APPS",
+        "chown",
+        "log",
+        "mkdir",
+        "return",
+        "tar",
+        "touch"
+      ],
+      "end_line": 99,
+      "signature": "extract_tgz()",
+      "decisions": 2
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::fetch",
+      "kind": "function",
+      "label": "fetch",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 59
+      },
+      "tier": "optional",
+      "defines": [
+        "dest",
+        "url"
+      ],
+      "refs": [
+        "basename",
+        "curl",
+        "die",
+        "dirname",
+        "log",
+        "mkdir",
+        "mv",
+        "return"
+      ],
+      "end_line": 67,
+      "signature": "fetch()",
+      "decisions": 2
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "kind": "function",
+      "label": "fetch_soft",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 69
+      },
+      "tier": "optional",
+      "defines": [
+        "dest",
+        "url"
+      ],
+      "refs": [
+        "curl",
+        "dirname",
+        "log",
+        "mkdir",
+        "mv",
+        "return",
+        "rm"
+      ],
+      "end_line": 80,
+      "signature": "fetch_soft()",
+      "decisions": 2
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::hok",
+      "kind": "variable",
+      "label": "hok",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 440
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 440,
+      "signature": "hok"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::log",
+      "kind": "function",
+      "label": "log",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 56
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "date",
+        "echo"
+      ],
+      "end_line": 56,
+      "signature": "log()",
+      "decisions": 0
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::n_active",
+      "kind": "variable",
+      "label": "n_active",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 426
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "\"$VENV/bin/python\"",
+        "echo"
+      ],
+      "end_line": 430,
+      "signature": "n_active"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::ok",
+      "kind": "variable",
+      "label": "ok",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 424
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 424,
+      "signature": "ok"
+    },
+    {
+      "id": "aecp::deploy::provision::bootstrap::sha_ok",
+      "kind": "function",
+      "label": "sha_ok",
+      "loc": {
+        "file": "deploy/provision/bootstrap.sh",
+        "line": 82
+      },
+      "tier": "optional",
+      "defines": [
+        "f",
+        "hash",
+        "sums"
+      ],
+      "refs": [
+        "awk",
+        "basename",
+        "die",
+        "grep",
+        "log",
+        "return",
+        "sha512sum"
+      ],
+      "end_line": 88,
+      "signature": "sha_ok()",
+      "decisions": 2
+    },
+    {
       "id": "aecp::deploy::provision::box_port_check",
       "kind": "module",
       "label": "aecp::deploy::provision::box_port_check",
@@ -5104,6 +6386,332 @@
       ],
       "end_line": 11,
       "signature": "proc"
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_ice",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_ice",
+      "loc": {
+        "file": "deploy/provision/dbg_ice.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_io",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_io",
+      "loc": {
+        "file": "deploy/provision/dbg_io.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_io2",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_io2",
+      "loc": {
+        "file": "deploy/provision/dbg_io2.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_io3",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_io3",
+      "loc": {
+        "file": "deploy/provision/dbg_io3.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_mpu",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_mpu",
+      "loc": {
+        "file": "deploy/provision/dbg_mpu.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_perms",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_perms",
+      "loc": {
+        "file": "deploy/provision/dbg_perms.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_rec7",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_rec7",
+      "loc": {
+        "file": "deploy/provision/dbg_rec7.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_rec7::PID",
+      "kind": "variable",
+      "label": "PID",
+      "loc": {
+        "file": "deploy/provision/dbg_rec7.sh",
+        "line": 3
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "systemctl"
+      ],
+      "end_line": 3,
+      "signature": "PID"
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_rec8",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_rec8",
+      "loc": {
+        "file": "deploy/provision/dbg_rec8.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_rec8::PID",
+      "kind": "variable",
+      "label": "PID",
+      "loc": {
+        "file": "deploy/provision/dbg_rec8.sh",
+        "line": 3
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "systemctl"
+      ],
+      "end_line": 3,
+      "signature": "PID"
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_recj",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_recj",
+      "loc": {
+        "file": "deploy/provision/dbg_recj.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_recon",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_recon",
+      "loc": {
+        "file": "deploy/provision/dbg_recon.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_small",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_small",
+      "loc": {
+        "file": "deploy/provision/dbg_small.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_solr",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_solr",
+      "loc": {
+        "file": "deploy/provision/dbg_solr.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_solr2",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_solr2",
+      "loc": {
+        "file": "deploy/provision/dbg_solr2.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_solr3",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_solr3",
+      "loc": {
+        "file": "deploy/provision/dbg_solr3.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_solr4",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_solr4",
+      "loc": {
+        "file": "deploy/provision/dbg_solr4.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_solrhome",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_solrhome",
+      "loc": {
+        "file": "deploy/provision/dbg_solrhome.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_sync",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_sync",
+      "loc": {
+        "file": "deploy/provision/dbg_sync.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_trace",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_trace",
+      "loc": {
+        "file": "deploy/provision/dbg_trace.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_units",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_units",
+      "loc": {
+        "file": "deploy/provision/dbg_units.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::dbg_wb",
+      "kind": "module",
+      "label": "aecp::deploy::provision::dbg_wb",
+      "loc": {
+        "file": "deploy/provision/dbg_wb.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::ozone_reset",
+      "kind": "module",
+      "label": "aecp::deploy::provision::ozone_reset",
+      "loc": {
+        "file": "deploy/provision/ozone_reset.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::deploy::provision::ozone_reset::JAVA_HOME",
+      "kind": "variable",
+      "label": "JAVA_HOME",
+      "loc": {
+        "file": "deploy/provision/ozone_reset.sh",
+        "line": 10
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 10,
+      "signature": "JAVA_HOME"
+    },
+    {
+      "id": "aecp::deploy::provision::ozone_reset::OZ",
+      "kind": "variable",
+      "label": "OZ",
+      "loc": {
+        "file": "deploy/provision/ozone_reset.sh",
+        "line": 11
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 11,
+      "signature": "OZ"
+    },
+    {
+      "id": "aecp::deploy::provision::ozone_reset::OZONE_HOME",
+      "kind": "variable",
+      "label": "OZONE_HOME",
+      "loc": {
+        "file": "deploy/provision/ozone_reset.sh",
+        "line": 10
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 10,
+      "signature": "OZONE_HOME"
     },
     {
       "id": "aecp::docs::COMMERCIAL",
@@ -5597,6 +7205,353 @@
       "signature": "aecp_system"
     },
     {
+      "id": "aecp::scripts::e2e::e2e_aimesh",
+      "kind": "module",
+      "label": "aecp::scripts::e2e::e2e_aimesh",
+      "loc": {
+        "file": "scripts/e2e/e2e_aimesh.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_aimesh::VENV",
+      "kind": "variable",
+      "label": "VENV",
+      "loc": {
+        "file": "scripts/e2e/e2e_aimesh.sh",
+        "line": 7
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_VENV"
+      ],
+      "end_line": 7,
+      "signature": "VENV"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_gateway",
+      "kind": "module",
+      "label": "aecp::scripts::e2e::e2e_gateway",
+      "loc": {
+        "file": "scripts/e2e/e2e_gateway.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_gateway::GW",
+      "kind": "variable",
+      "label": "GW",
+      "loc": {
+        "file": "scripts/e2e/e2e_gateway.sh",
+        "line": 5
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 5,
+      "signature": "GW"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_gateway::check",
+      "kind": "function",
+      "label": "check",
+      "loc": {
+        "file": "scripts/e2e/e2e_gateway.sh",
+        "line": 43
+      },
+      "tier": "optional",
+      "defines": [
+        "code"
+      ],
+      "refs": [
+        "curl",
+        "echo",
+        "true"
+      ],
+      "end_line": 47,
+      "signature": "check()",
+      "decisions": 2
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_memory",
+      "kind": "module",
+      "label": "aecp::scripts::e2e::e2e_memory",
+      "loc": {
+        "file": "scripts/e2e/e2e_memory.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_memory::REPORT",
+      "kind": "variable",
+      "label": "REPORT",
+      "loc": {
+        "file": "scripts/e2e/e2e_memory.sh",
+        "line": 6
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_DATA"
+      ],
+      "end_line": 6,
+      "signature": "REPORT"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_memory::VENV",
+      "kind": "variable",
+      "label": "VENV",
+      "loc": {
+        "file": "scripts/e2e/e2e_memory.sh",
+        "line": 5
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_VENV"
+      ],
+      "end_line": 5,
+      "signature": "VENV"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_storage",
+      "kind": "module",
+      "label": "aecp::scripts::e2e::e2e_storage",
+      "loc": {
+        "file": "scripts/e2e/e2e_storage.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_storage::JAVA_HOME",
+      "kind": "variable",
+      "label": "JAVA_HOME",
+      "loc": {
+        "file": "scripts/e2e/e2e_storage.sh",
+        "line": 10
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_JAVA_HOME"
+      ],
+      "end_line": 10,
+      "signature": "JAVA_HOME"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_storage::OZ",
+      "kind": "variable",
+      "label": "OZ",
+      "loc": {
+        "file": "scripts/e2e/e2e_storage.sh",
+        "line": 8
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_APPS"
+      ],
+      "end_line": 8,
+      "signature": "OZ"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_storage::OZONE_HOME",
+      "kind": "variable",
+      "label": "OZONE_HOME",
+      "loc": {
+        "file": "scripts/e2e/e2e_storage.sh",
+        "line": 9
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_APPS"
+      ],
+      "end_line": 9,
+      "signature": "OZONE_HOME"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_storage::VENV",
+      "kind": "variable",
+      "label": "VENV",
+      "loc": {
+        "file": "scripts/e2e/e2e_storage.sh",
+        "line": 7
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_VENV"
+      ],
+      "end_line": 7,
+      "signature": "VENV"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming",
+      "kind": "module",
+      "label": "aecp::scripts::e2e::e2e_streaming",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::FLINK_HOME",
+      "kind": "variable",
+      "label": "FLINK_HOME",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 10
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_APPS"
+      ],
+      "end_line": 10,
+      "signature": "FLINK_HOME"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::JOB_ID",
+      "kind": "variable",
+      "label": "JOB_ID",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 70
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 70,
+      "signature": "JOB_ID"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::MSG_COUNT",
+      "kind": "variable",
+      "label": "MSG_COUNT",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 13
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 13,
+      "signature": "MSG_COUNT"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::OUT_DIR",
+      "kind": "variable",
+      "label": "OUT_DIR",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 11
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_DATA"
+      ],
+      "end_line": 11,
+      "signature": "OUT_DIR"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::REST",
+      "kind": "variable",
+      "label": "REST",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 14
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 14,
+      "signature": "REST"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::SQL_FILE",
+      "kind": "variable",
+      "label": "SQL_FILE",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 32
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 32,
+      "signature": "SQL_FILE"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::STATE",
+      "kind": "variable",
+      "label": "STATE",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 75
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "JOB_ID",
+        "REST",
+        "curl",
+        "grep",
+        "head"
+      ],
+      "end_line": 75,
+      "signature": "STATE"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::TOPIC",
+      "kind": "variable",
+      "label": "TOPIC",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 12
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "date"
+      ],
+      "end_line": 12,
+      "signature": "TOPIC"
+    },
+    {
+      "id": "aecp::scripts::e2e::e2e_streaming::VENV",
+      "kind": "variable",
+      "label": "VENV",
+      "loc": {
+        "file": "scripts/e2e/e2e_streaming.sh",
+        "line": 9
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "AECP_VENV"
+      ],
+      "end_line": 9,
+      "signature": "VENV"
+    },
+    {
       "id": "aecp::scripts::e2e::flink_sql_rest",
       "kind": "module",
       "label": "aecp::scripts::e2e::flink_sql_rest",
@@ -5831,6 +7786,101 @@
       "end_line": 71,
       "signature": "def submit_insert(sid: str, statement: str, timeout: int = 60) -> str",
       "decisions": 5
+    },
+    {
+      "id": "aecp::scripts::e2e::run_all",
+      "kind": "module",
+      "label": "aecp::scripts::e2e::run_all",
+      "loc": {
+        "file": "scripts/e2e/run_all.sh",
+        "line": 1
+      },
+      "tier": "core",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "aecp::scripts::e2e::run_all::DIR",
+      "kind": "variable",
+      "label": "DIR",
+      "loc": {
+        "file": "scripts/e2e/run_all.sh",
+        "line": 6
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "cd",
+        "dirname",
+        "pwd"
+      ],
+      "end_line": 6,
+      "signature": "DIR"
+    },
+    {
+      "id": "aecp::scripts::e2e::run_all::START",
+      "kind": "variable",
+      "label": "START",
+      "loc": {
+        "file": "scripts/e2e/run_all.sh",
+        "line": 8
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [
+        "date"
+      ],
+      "end_line": 8,
+      "signature": "START"
+    },
+    {
+      "id": "aecp::scripts::e2e::run_all::SUMMARY",
+      "kind": "variable",
+      "label": "SUMMARY",
+      "loc": {
+        "file": "scripts/e2e/run_all.sh",
+        "line": 7
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 7,
+      "signature": "SUMMARY"
+    },
+    {
+      "id": "aecp::scripts::e2e::run_all::fails",
+      "kind": "variable",
+      "label": "fails",
+      "loc": {
+        "file": "scripts/e2e/run_all.sh",
+        "line": 28
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": [],
+      "end_line": 28,
+      "signature": "fails"
+    },
+    {
+      "id": "aecp::scripts::e2e::run_all::run",
+      "kind": "function",
+      "label": "run",
+      "loc": {
+        "file": "scripts/e2e/run_all.sh",
+        "line": 11
+      },
+      "tier": "optional",
+      "defines": [
+        "id",
+        "script"
+      ],
+      "refs": [
+        "bash",
+        "echo"
+      ],
+      "end_line": 18,
+      "signature": "run()",
+      "decisions": 1
     },
     {
       "id": "aecp::tests::conftest",
@@ -7163,6 +9213,90 @@
       "refs": []
     },
     {
+      "id": "external::\"$HOME/.cargo/bin/rustc\"",
+      "kind": "external",
+      "label": "\"$HOME/.cargo/bin/rustc\"",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::\"$OZ\"",
+      "kind": "external",
+      "label": "\"$OZ\"",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::\"$SVENV/bin/superset\"",
+      "kind": "external",
+      "label": "\"$SVENV/bin/superset\"",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::\"$VENV/bin/aecpctl\"",
+      "kind": "external",
+      "label": "\"$VENV/bin/aecpctl\"",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::\"$VENV/bin/pip\"",
+      "kind": "external",
+      "label": "\"$VENV/bin/pip\"",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::\"$VENV/bin/python\"",
+      "kind": "external",
+      "label": "\"$VENV/bin/python\"",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::\"$VENV/bin/uv\"",
+      "kind": "external",
+      "label": "\"$VENV/bin/uv\"",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::\"\\n\".join",
       "kind": "external",
       "label": "\"\\n\".join",
@@ -7238,6 +9372,30 @@
       "id": "external::(parent / \"pyproject.toml\").exists",
       "kind": "external",
       "label": "(parent / \"pyproject.toml\").exists",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::./configure",
+      "kind": "external",
+      "label": "./configure",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::/opt/aecp/venv/bin/pip",
+      "kind": "external",
+      "label": "/opt/aecp/venv/bin/pip",
       "loc": {
         "file": "",
         "line": 0
@@ -7847,6 +10005,18 @@
       "refs": []
     },
     {
+      "id": "external::apt-get",
+      "kind": "external",
+      "label": "apt-get",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::argparse",
       "kind": "external",
       "label": "argparse",
@@ -7862,6 +10032,18 @@
       "id": "external::argparse.ArgumentParser",
       "kind": "external",
       "label": "argparse.ArgumentParser",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::awk",
+      "kind": "external",
+      "label": "awk",
       "loc": {
         "file": "",
         "line": 0
@@ -7898,6 +10080,30 @@
       "id": "external::back.equals",
       "kind": "external",
       "label": "back.equals",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::basename",
+      "kind": "external",
+      "label": "basename",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::bash",
+      "kind": "external",
+      "label": "bash",
       "loc": {
         "file": "",
         "line": 0
@@ -7991,6 +10197,18 @@
       "refs": []
     },
     {
+      "id": "external::break",
+      "kind": "external",
+      "label": "break",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::bytes",
       "kind": "external",
       "label": "bytes",
@@ -8063,6 +10281,18 @@
       "refs": []
     },
     {
+      "id": "external::cat",
+      "kind": "external",
+      "label": "cat",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::catalog.create_namespace",
       "kind": "external",
       "label": "catalog.create_namespace",
@@ -8099,9 +10329,57 @@
       "refs": []
     },
     {
+      "id": "external::cd",
+      "kind": "external",
+      "label": "cd",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::cfg.catalog_kwargs",
       "kind": "external",
       "label": "cfg.catalog_kwargs",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::chmod",
+      "kind": "external",
+      "label": "chmod",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::chown",
+      "kind": "external",
+      "label": "chown",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::chpasswd",
+      "kind": "external",
+      "label": "chpasswd",
       "loc": {
         "file": "",
         "line": 0
@@ -8198,6 +10476,18 @@
       "id": "external::collections",
       "kind": "external",
       "label": "collections",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::command",
+      "kind": "external",
+      "label": "command",
       "loc": {
         "file": "",
         "line": 0
@@ -8339,6 +10629,30 @@
       "refs": []
     },
     {
+      "id": "external::cp",
+      "kind": "external",
+      "label": "cp",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::curl",
+      "kind": "external",
+      "label": "curl",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::d.get",
       "kind": "external",
       "label": "d.get",
@@ -8375,9 +10689,45 @@
       "refs": []
     },
     {
+      "id": "external::date",
+      "kind": "external",
+      "label": "date",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::datetime",
       "kind": "external",
       "label": "datetime",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::df",
+      "kind": "external",
+      "label": "df",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::dirname",
+      "kind": "external",
+      "label": "dirname",
       "loc": {
         "file": "",
         "line": 0
@@ -8414,6 +10764,18 @@
       "id": "external::e.read().decode",
       "kind": "external",
       "label": "e.read().decode",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::echo",
+      "kind": "external",
+      "label": "echo",
       "loc": {
         "file": "",
         "line": 0
@@ -8510,6 +10872,18 @@
       "id": "external::env_file.read_text",
       "kind": "external",
       "label": "env_file.read_text",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::exit",
+      "kind": "external",
+      "label": "exit",
       "loc": {
         "file": "",
         "line": 0
@@ -8711,6 +11085,18 @@
       "refs": []
     },
     {
+      "id": "external::git",
+      "kind": "external",
+      "label": "git",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::glob",
       "kind": "external",
       "label": "glob",
@@ -8726,6 +11112,18 @@
       "id": "external::glob.glob",
       "kind": "external",
       "label": "glob.glob",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::grep",
+      "kind": "external",
+      "label": "grep",
       "loc": {
         "file": "",
         "line": 0
@@ -8798,6 +11196,30 @@
       "id": "external::hashlib.blake2b(token.encode(\"utf-8\"), digest_size=8,\n                                 person=self.seed).digest",
       "kind": "external",
       "label": "hashlib.blake2b(token.encode(\"utf-8\"), digest_size=8,\n                                 person=self.seed).digest",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::head",
+      "kind": "external",
+      "label": "head",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::id",
+      "kind": "external",
+      "label": "id",
       "loc": {
         "file": "",
         "line": 0
@@ -8975,6 +11397,18 @@
       "refs": []
     },
     {
+      "id": "external::ldconfig",
+      "kind": "external",
+      "label": "ldconfig",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::len",
       "kind": "external",
       "label": "len",
@@ -8999,9 +11433,45 @@
       "refs": []
     },
     {
+      "id": "external::ln",
+      "kind": "external",
+      "label": "ln",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::ls",
+      "kind": "external",
+      "label": "ls",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::m.group",
       "kind": "external",
       "label": "m.group",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::make",
+      "kind": "external",
+      "label": "make",
       "loc": {
         "file": "",
         "line": 0
@@ -9059,6 +11529,18 @@
       "refs": []
     },
     {
+      "id": "external::mkdir",
+      "kind": "external",
+      "label": "mkdir",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::monkeypatch.setattr",
       "kind": "external",
       "label": "monkeypatch.setattr",
@@ -9095,6 +11577,30 @@
       "refs": []
     },
     {
+      "id": "external::mv",
+      "kind": "external",
+      "label": "mv",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::nproc",
+      "kind": "external",
+      "label": "nproc",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::op.get",
       "kind": "external",
       "label": "op.get",
@@ -9110,6 +11616,18 @@
       "id": "external::open",
       "kind": "external",
       "label": "open",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::openssl",
+      "kind": "external",
+      "label": "openssl",
       "loc": {
         "file": "",
         "line": 0
@@ -9551,6 +12069,18 @@
       "refs": []
     },
     {
+      "id": "external::printf",
+      "kind": "external",
+      "label": "printf",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::proc.stdout.strip",
       "kind": "external",
       "label": "proc.stdout.strip",
@@ -9590,6 +12120,18 @@
       "id": "external::pulsar.Client",
       "kind": "external",
       "label": "pulsar.Client",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::pwd",
+      "kind": "external",
+      "label": "pwd",
       "loc": {
         "file": "",
         "line": 0
@@ -9707,6 +12249,18 @@
       "refs": []
     },
     {
+      "id": "external::python3",
+      "kind": "external",
+      "label": "python3",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::r.json",
       "kind": "external",
       "label": "r.json",
@@ -9815,6 +12369,18 @@
       "refs": []
     },
     {
+      "id": "external::readlink",
+      "kind": "external",
+      "label": "readlink",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::report[\"location\"].startswith",
       "kind": "external",
       "label": "report[\"location\"].startswith",
@@ -9899,6 +12465,30 @@
       "refs": []
     },
     {
+      "id": "external::return",
+      "kind": "external",
+      "label": "return",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::rm",
+      "kind": "external",
+      "label": "rm",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::round",
       "kind": "external",
       "label": "round",
@@ -9923,9 +12513,33 @@
       "refs": []
     },
     {
+      "id": "external::rsync",
+      "kind": "external",
+      "label": "rsync",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::s.get",
       "kind": "external",
       "label": "s.get",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::sed",
+      "kind": "external",
+      "label": "sed",
       "loc": {
         "file": "",
         "line": 0
@@ -9983,6 +12597,18 @@
       "refs": []
     },
     {
+      "id": "external::seq",
+      "kind": "external",
+      "label": "seq",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::server.serve",
       "kind": "external",
       "label": "server.serve",
@@ -10031,6 +12657,42 @@
       "refs": []
     },
     {
+      "id": "external::sh",
+      "kind": "external",
+      "label": "sh",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::sha256sum",
+      "kind": "external",
+      "label": "sha256sum",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::sha512sum",
+      "kind": "external",
+      "label": "sha512sum",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::singa",
       "kind": "external",
       "label": "singa",
@@ -10046,6 +12708,18 @@
       "id": "external::sink.getvalue",
       "kind": "external",
       "label": "sink.getvalue",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::sleep",
+      "kind": "external",
+      "label": "sleep",
       "loc": {
         "file": "",
         "line": 0
@@ -10094,6 +12768,30 @@
       "id": "external::sorted",
       "kind": "external",
       "label": "sorted",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::source",
+      "kind": "external",
+      "label": "source",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::ss",
+      "kind": "external",
+      "label": "ss",
       "loc": {
         "file": "",
         "line": 0
@@ -10247,6 +12945,18 @@
       "refs": []
     },
     {
+      "id": "external::sudo",
+      "kind": "external",
+      "label": "sudo",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::sum",
       "kind": "external",
       "label": "sum",
@@ -10310,6 +13020,18 @@
       "id": "external::sys.path.insert",
       "kind": "external",
       "label": "sys.path.insert",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::systemctl",
+      "kind": "external",
+      "label": "systemctl",
       "loc": {
         "file": "",
         "line": 0
@@ -10418,6 +13140,42 @@
       "id": "external::table.to_batches",
       "kind": "external",
       "label": "table.to_batches",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::tail",
+      "kind": "external",
+      "label": "tail",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::tar",
+      "kind": "external",
+      "label": "tar",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::tee",
+      "kind": "external",
+      "label": "tee",
       "loc": {
         "file": "",
         "line": 0
@@ -10559,9 +13317,57 @@
       "refs": []
     },
     {
+      "id": "external::touch",
+      "kind": "external",
+      "label": "touch",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::tr",
+      "kind": "external",
+      "label": "tr",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::true",
+      "kind": "external",
+      "label": "true",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
       "id": "external::typing",
       "kind": "external",
       "label": "typing",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::uname",
+      "kind": "external",
+      "label": "uname",
       "loc": {
         "file": "",
         "line": 0
@@ -10622,6 +13428,18 @@
       "id": "external::urllib.request.urlopen",
       "kind": "external",
       "label": "urllib.request.urlopen",
+      "loc": {
+        "file": "",
+        "line": 0
+      },
+      "tier": "optional",
+      "defines": [],
+      "refs": []
+    },
+    {
+      "id": "external::useradd",
+      "kind": "external",
+      "label": "useradd",
       "loc": {
         "file": "",
         "line": 0
@@ -10940,7 +13758,145 @@
     },
     {
       "from": "aecp",
+      "to": "aecp::deploy::provision::aetheris-launch",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::bootstrap",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
       "to": "aecp::deploy::provision::box_port_check",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_ice",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_io",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_io2",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_io3",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_mpu",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_perms",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_rec7",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_rec8",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_recj",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_recon",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_small",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_solr",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_solr2",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_solr3",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_solr4",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_solrhome",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_sync",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_trace",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_units",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::dbg_wb",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::deploy::provision::ozone_reset",
       "kind": "contains",
       "attrs": {}
     },
@@ -11012,7 +13968,43 @@
     },
     {
       "from": "aecp",
+      "to": "aecp::scripts::e2e::e2e_aimesh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::scripts::e2e::e2e_gateway",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::scripts::e2e::e2e_memory",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::scripts::e2e::e2e_storage",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::scripts::e2e::e2e_streaming",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
       "to": "aecp::scripts::e2e::flink_sql_rest",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp",
+      "to": "aecp::scripts::e2e::run_all",
       "kind": "contains",
       "attrs": {}
     },
@@ -12085,6 +15077,324 @@
       "attrs": {}
     },
     {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_APPS",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_DATA",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_JAVA_HOME",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_REPO",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_REPO_URL",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_SUPERSET_VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_USER",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::AEREPO",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::ARCH",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::ARCHIVE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::BIN",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::DATA_ROOT",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::DEBIAN_FRONTEND",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::DL",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::FLASK_APP",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::FREE_GB",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::GUAC_BASE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::GUAC_PW",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::HASH",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::JAVA_HOME",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::MAVEN",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::MEM_KB",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::MEM_MB",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::OZ",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::PATH",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::PYTGT",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::RECREATE_VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::REPO",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::REPO_ROOT",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::REQUIRED_PORTS",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::SCRIPT_DIR",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::SSHPW",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::SS_KEY",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::SUPERSET_CONFIG_PATH",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::SUP_PW",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::SVENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::TB",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::UV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::UV_PYTHON_INSTALL_DIR",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::die",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::dl_dist",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::fetch",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::hok",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::n_active",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::ok",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/bootstrap.sh",
+      "to": "aecp::deploy::provision::bootstrap::sha_ok",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
       "from": "aecp::/deploy/provision/box_port_check.py",
       "to": "aecp::deploy::provision::box_port_check::aecz",
       "kind": "contains",
@@ -12123,6 +15433,36 @@
     {
       "from": "aecp::/deploy/provision/box_port_check.py",
       "to": "aecp::deploy::provision::box_port_check::proc",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/dbg_rec7.sh",
+      "to": "aecp::deploy::provision::dbg_rec7::PID",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/dbg_rec8.sh",
+      "to": "aecp::deploy::provision::dbg_rec8::PID",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/ozone_reset.sh",
+      "to": "aecp::deploy::provision::ozone_reset::JAVA_HOME",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/ozone_reset.sh",
+      "to": "aecp::deploy::provision::ozone_reset::OZ",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/deploy/provision/ozone_reset.sh",
+      "to": "aecp::deploy::provision::ozone_reset::OZONE_HOME",
       "kind": "contains",
       "attrs": {}
     },
@@ -12265,6 +15605,114 @@
       "attrs": {}
     },
     {
+      "from": "aecp::/scripts/e2e/e2e_aimesh.sh",
+      "to": "aecp::scripts::e2e::e2e_aimesh::VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_gateway.sh",
+      "to": "aecp::scripts::e2e::e2e_gateway::GW",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_gateway.sh",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_memory.sh",
+      "to": "aecp::scripts::e2e::e2e_memory::REPORT",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_memory.sh",
+      "to": "aecp::scripts::e2e::e2e_memory::VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_storage.sh",
+      "to": "aecp::scripts::e2e::e2e_storage::JAVA_HOME",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_storage.sh",
+      "to": "aecp::scripts::e2e::e2e_storage::OZ",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_storage.sh",
+      "to": "aecp::scripts::e2e::e2e_storage::OZONE_HOME",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_storage.sh",
+      "to": "aecp::scripts::e2e::e2e_storage::VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::FLINK_HOME",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::JOB_ID",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::MSG_COUNT",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::OUT_DIR",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::REST",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::SQL_FILE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::STATE",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::TOPIC",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "to": "aecp::scripts::e2e::e2e_streaming::VENV",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
       "from": "aecp::/scripts/e2e/flink_sql_rest.py",
       "to": "aecp::scripts::e2e::flink_sql_rest::GW",
       "kind": "contains",
@@ -12321,6 +15769,36 @@
     {
       "from": "aecp::/scripts/e2e/flink_sql_rest.py",
       "to": "aecp::scripts::e2e::flink_sql_rest::submit_insert",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/run_all.sh",
+      "to": "aecp::scripts::e2e::run_all::DIR",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/run_all.sh",
+      "to": "aecp::scripts::e2e::run_all::START",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/run_all.sh",
+      "to": "aecp::scripts::e2e::run_all::SUMMARY",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/run_all.sh",
+      "to": "aecp::scripts::e2e::run_all::fails",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::/scripts/e2e/run_all.sh",
+      "to": "aecp::scripts::e2e::run_all::run",
       "kind": "contains",
       "attrs": {}
     },
@@ -14607,6 +18085,13 @@
     },
     {
       "from": "aecp::aecp::cli::main::cmd_health",
+      "to": "aecp::deploy::provision::bootstrap::ok",
+      "kind": "reads",
+      "line": 104,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::cli::main::cmd_health",
       "to": "aecp::tests::test_solr_schema::StubResponse::json",
       "kind": "reads",
       "line": 104,
@@ -15140,6 +18625,13 @@
     {
       "from": "aecp::aecp::cli::main::cmd_stop",
       "to": "aecp::aecp::launcher::units::render_units",
+      "kind": "reads",
+      "line": 78,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::cli::main::cmd_stop",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
       "kind": "reads",
       "line": 78,
       "attrs": {}
@@ -16325,6 +19817,13 @@
     },
     {
       "from": "aecp::aecp::launcher::aecpd::_run",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
+      "kind": "defines",
+      "line": 25,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::launcher::aecpd::_run",
       "to": "external::' '.join",
       "kind": "calls",
       "line": 29,
@@ -16654,6 +20153,13 @@
     },
     {
       "from": "aecp::aecp::launcher::aecpd::is_active",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
+      "kind": "reads",
+      "line": 61,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::launcher::aecpd::is_active",
       "to": "external::bool",
       "kind": "reads",
       "line": 61,
@@ -16767,6 +20273,13 @@
     {
       "from": "aecp::aecp::launcher::aecpd::main",
       "to": "aecp::aecp::launcher::units::render_units",
+      "kind": "reads",
+      "line": 108,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::launcher::aecpd::main",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
       "kind": "reads",
       "line": 108,
       "attrs": {}
@@ -16913,6 +20426,13 @@
     },
     {
       "from": "aecp::aecp::launcher::aecpd::purge",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
+      "kind": "reads",
+      "line": 78,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::launcher::aecpd::purge",
       "to": "external::(UNIT_DIR / name).unlink",
       "kind": "calls",
       "line": 85,
@@ -17032,6 +20552,13 @@
     },
     {
       "from": "aecp::aecp::launcher::aecpd::status",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
+      "kind": "reads",
+      "line": 67,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::launcher::aecpd::status",
       "to": "external::proc.stdout.strip",
       "kind": "calls",
       "line": 74,
@@ -17075,6 +20602,13 @@
     {
       "from": "aecp::aecp::launcher::aecpd::stop",
       "to": "aecp::aecp::launcher::aecpd::_run",
+      "kind": "reads",
+      "line": 56,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::aecp::launcher::aecpd::stop",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
       "kind": "reads",
       "line": 56,
       "attrs": {}
@@ -21458,6 +24992,1418 @@
       "attrs": {}
     },
     {
+      "from": "aecp::deploy::provision::aetheris-launch",
+      "to": "aecp::/deploy/provision/aetheris-launch.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::aetheris-launch",
+      "to": "external::cd",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::aetheris-launch",
+      "to": "external::git",
+      "kind": "calls",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::aetheris-launch",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::aetheris-launch",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 10,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "aecp::/deploy/provision/bootstrap.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "aecp::deploy::provision::bootstrap::die",
+      "kind": "calls",
+      "line": 114,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "aecp::deploy::provision::bootstrap::dl_dist",
+      "kind": "calls",
+      "line": 155,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "aecp::deploy::provision::bootstrap::fetch",
+      "kind": "calls",
+      "line": 165,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "kind": "calls",
+      "line": 167,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "calls",
+      "line": 28,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "aecp::deploy::provision::bootstrap::sha_ok",
+      "kind": "calls",
+      "line": 169,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::\"$HOME/.cargo/bin/rustc\"",
+      "kind": "calls",
+      "line": 344,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::\"$SVENV/bin/superset\"",
+      "kind": "calls",
+      "line": 361,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::\"$VENV/bin/aecpctl\"",
+      "kind": "calls",
+      "line": 386,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::\"$VENV/bin/pip\"",
+      "kind": "calls",
+      "line": 319,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::\"$VENV/bin/python\"",
+      "kind": "calls",
+      "line": 426,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::\"$VENV/bin/uv\"",
+      "kind": "calls",
+      "line": 340,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::./configure",
+      "kind": "calls",
+      "line": 175,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::/opt/aecp/venv/bin/pip",
+      "kind": "calls",
+      "line": 354,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::apt-get",
+      "kind": "calls",
+      "line": 116,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::awk",
+      "kind": "calls",
+      "line": 119,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::break",
+      "kind": "calls",
+      "line": 401,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::cat",
+      "kind": "calls",
+      "line": 206,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::cd",
+      "kind": "calls",
+      "line": 23,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::chmod",
+      "kind": "calls",
+      "line": 309,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::chown",
+      "kind": "calls",
+      "line": 316,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::chpasswd",
+      "kind": "calls",
+      "line": 310,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::command",
+      "kind": "calls",
+      "line": 116,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::cp",
+      "kind": "calls",
+      "line": 222,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::curl",
+      "kind": "calls",
+      "line": 345,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::df",
+      "kind": "calls",
+      "line": 128,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::dirname",
+      "kind": "calls",
+      "line": 23,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 42,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::exit",
+      "kind": "calls",
+      "line": 42,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::git",
+      "kind": "calls",
+      "line": 27,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 124,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::id",
+      "kind": "calls",
+      "line": 114,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::ldconfig",
+      "kind": "calls",
+      "line": 176,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::ln",
+      "kind": "calls",
+      "line": 178,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::make",
+      "kind": "calls",
+      "line": 175,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::mkdir",
+      "kind": "calls",
+      "line": 149,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::nproc",
+      "kind": "calls",
+      "line": 175,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::openssl",
+      "kind": "calls",
+      "line": 259,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::printf",
+      "kind": "calls",
+      "line": 293,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::pwd",
+      "kind": "calls",
+      "line": 23,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::python3",
+      "kind": "calls",
+      "line": 317,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::readlink",
+      "kind": "calls",
+      "line": 332,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::rm",
+      "kind": "calls",
+      "line": 191,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::rsync",
+      "kind": "calls",
+      "line": 315,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::sed",
+      "kind": "calls",
+      "line": 199,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::seq",
+      "kind": "calls",
+      "line": 400,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 13,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::sh",
+      "kind": "calls",
+      "line": 345,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::sha256sum",
+      "kind": "calls",
+      "line": 293,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::sleep",
+      "kind": "calls",
+      "line": 122,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::source",
+      "kind": "calls",
+      "line": 47,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::ss",
+      "kind": "calls",
+      "line": 124,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 392,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::systemctl",
+      "kind": "calls",
+      "line": 118,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::tail",
+      "kind": "calls",
+      "line": 128,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::tar",
+      "kind": "calls",
+      "line": 173,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::touch",
+      "kind": "calls",
+      "line": 369,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::tr",
+      "kind": "calls",
+      "line": 128,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::true",
+      "kind": "calls",
+      "line": 118,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::uname",
+      "kind": "calls",
+      "line": 38,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap",
+      "to": "external::useradd",
+      "kind": "calls",
+      "line": 150,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_APPS",
+      "to": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "reads",
+      "line": 44,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_DATA",
+      "to": "aecp::deploy::provision::bootstrap::DATA_ROOT",
+      "kind": "reads",
+      "line": 44,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_JAVA_HOME",
+      "to": "aecp::deploy::provision::bootstrap::JAVA_HOME",
+      "kind": "reads",
+      "line": 44,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_REPO",
+      "to": "aecp::deploy::provision::bootstrap::REPO",
+      "kind": "reads",
+      "line": 45,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_REPO_URL",
+      "to": "aecp::deploy::provision::bootstrap::AECP_REPO_URL",
+      "kind": "reads",
+      "line": 33,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "reads",
+      "line": 16,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_SUPERSET_VENV",
+      "to": "aecp::deploy::provision::bootstrap::SVENV",
+      "kind": "reads",
+      "line": 356,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_USER",
+      "to": "aecp::deploy::provision::bootstrap::AECP_USER",
+      "kind": "reads",
+      "line": 22,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "to": "aecp::deploy::provision::bootstrap::VENV",
+      "kind": "reads",
+      "line": 45,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::AEREPO",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "reads",
+      "line": 314,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::APPS",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "reads",
+      "line": 17,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::ARCH",
+      "to": "external::uname",
+      "kind": "reads",
+      "line": 38,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::BIN",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "reads",
+      "line": 20,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::DATA_ROOT",
+      "to": "aecp::deploy::provision::bootstrap::AECP_DATA",
+      "kind": "reads",
+      "line": 18,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::DL",
+      "to": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "reads",
+      "line": 21,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::FREE_GB",
+      "to": "external::df",
+      "kind": "reads",
+      "line": 128,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::FREE_GB",
+      "to": "external::tail",
+      "kind": "reads",
+      "line": 128,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::FREE_GB",
+      "to": "external::tr",
+      "kind": "reads",
+      "line": 128,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::GUAC_PW",
+      "to": "external::openssl",
+      "kind": "reads",
+      "line": 291,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::HASH",
+      "to": "aecp::deploy::provision::bootstrap::GUAC_PW",
+      "kind": "reads",
+      "line": 293,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::HASH",
+      "to": "external::awk",
+      "kind": "reads",
+      "line": 293,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::HASH",
+      "to": "external::printf",
+      "kind": "reads",
+      "line": 293,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::HASH",
+      "to": "external::sha256sum",
+      "kind": "reads",
+      "line": 293,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::JAVA_HOME",
+      "to": "aecp::deploy::provision::bootstrap::AECP_JAVA_HOME",
+      "kind": "reads",
+      "line": 40,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::MEM_KB",
+      "to": "external::awk",
+      "kind": "reads",
+      "line": 130,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::MEM_MB",
+      "to": "aecp::deploy::provision::bootstrap::MEM_KB",
+      "kind": "reads",
+      "line": 131,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::OZ",
+      "to": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "reads",
+      "line": 389,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::PATH",
+      "to": "aecp::deploy::provision::bootstrap::PATH",
+      "kind": "reads",
+      "line": 348,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::PYTGT",
+      "to": "aecp::deploy::provision::bootstrap::SVENV",
+      "kind": "reads",
+      "line": 332,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::PYTGT",
+      "to": "external::echo",
+      "kind": "reads",
+      "line": 332,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::PYTGT",
+      "to": "external::readlink",
+      "kind": "reads",
+      "line": 332,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::REPO",
+      "to": "aecp::deploy::provision::bootstrap::REPO_ROOT",
+      "kind": "reads",
+      "line": 30,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::REPO_ROOT",
+      "to": "aecp::deploy::provision::bootstrap::SCRIPT_DIR",
+      "kind": "reads",
+      "line": 24,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::REPO_ROOT",
+      "to": "external::cd",
+      "kind": "reads",
+      "line": 24,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::REPO_ROOT",
+      "to": "external::pwd",
+      "kind": "reads",
+      "line": 24,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SCRIPT_DIR",
+      "to": "external::cd",
+      "kind": "reads",
+      "line": 23,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SCRIPT_DIR",
+      "to": "external::dirname",
+      "kind": "reads",
+      "line": 23,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SCRIPT_DIR",
+      "to": "external::pwd",
+      "kind": "reads",
+      "line": 23,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SSHPW",
+      "to": "external::openssl",
+      "kind": "reads",
+      "line": 292,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SS_KEY",
+      "to": "external::openssl",
+      "kind": "reads",
+      "line": 259,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SUPERSET_CONFIG_PATH",
+      "to": "aecp::deploy::provision::bootstrap::DATA_ROOT",
+      "kind": "reads",
+      "line": 358,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SUP_PW",
+      "to": "external::openssl",
+      "kind": "reads",
+      "line": 363,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SVENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "reads",
+      "line": 325,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::SVENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_SUPERSET_VENV",
+      "kind": "reads",
+      "line": 325,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::TB",
+      "to": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "reads",
+      "line": 280,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::UV",
+      "to": "aecp::deploy::provision::bootstrap::VENV",
+      "kind": "reads",
+      "line": 330,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::UV_PYTHON_INSTALL_DIR",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "reads",
+      "line": 331,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::VENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_ROOT",
+      "kind": "reads",
+      "line": 19,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::VENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "kind": "reads",
+      "line": 19,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::die",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 57,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::die",
+      "to": "external::echo",
+      "kind": "reads",
+      "line": 57,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::die",
+      "to": "external::exit",
+      "kind": "calls",
+      "line": 57,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::die",
+      "to": "external::exit",
+      "kind": "reads",
+      "line": 57,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::aecp::aimesh::embed::Embedder::name",
+      "kind": "defines",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::aecp::aimesh::embed::Embedder::name",
+      "kind": "writes",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::DL",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "kind": "calls",
+      "line": 110,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::fetch",
+      "kind": "calls",
+      "line": 106,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::fetch",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "kind": "calls",
+      "line": 107,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "calls",
+      "line": 104,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::sha_ok",
+      "kind": "calls",
+      "line": 108,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "aecp::deploy::provision::bootstrap::sha_ok",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "external::return",
+      "kind": "calls",
+      "line": 104,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::dl_dist",
+      "to": "external::return",
+      "kind": "reads",
+      "line": 101,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "aecp::aecp::aimesh::embed::Embedder::name",
+      "kind": "defines",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "aecp::aecp::aimesh::embed::Embedder::name",
+      "kind": "writes",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "aecp::deploy::provision::bootstrap::AECP_USER",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "aecp::deploy::provision::bootstrap::APPS",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "calls",
+      "line": 93,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::chown",
+      "kind": "calls",
+      "line": 98,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::chown",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::mkdir",
+      "kind": "calls",
+      "line": 95,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::mkdir",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::return",
+      "kind": "calls",
+      "line": 93,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::return",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::tar",
+      "kind": "calls",
+      "line": 96,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::tar",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::touch",
+      "kind": "calls",
+      "line": 97,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+      "to": "external::touch",
+      "kind": "reads",
+      "line": 90,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "aecp::deploy::provision::bootstrap::die",
+      "kind": "calls",
+      "line": 65,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "aecp::deploy::provision::bootstrap::die",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "calls",
+      "line": 61,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::basename",
+      "kind": "calls",
+      "line": 61,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::basename",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::curl",
+      "kind": "calls",
+      "line": 64,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::curl",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::dirname",
+      "kind": "calls",
+      "line": 62,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::dirname",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::mkdir",
+      "kind": "calls",
+      "line": 62,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::mkdir",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::mv",
+      "kind": "calls",
+      "line": 66,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::mv",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::return",
+      "kind": "calls",
+      "line": 61,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch",
+      "to": "external::return",
+      "kind": "reads",
+      "line": 59,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "calls",
+      "line": 76,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "reads",
+      "line": 69,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::curl",
+      "kind": "calls",
+      "line": 73,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::curl",
+      "kind": "reads",
+      "line": 69,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::dirname",
+      "kind": "calls",
+      "line": 72,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::dirname",
+      "kind": "reads",
+      "line": 69,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::mkdir",
+      "kind": "calls",
+      "line": 72,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::mkdir",
+      "kind": "reads",
+      "line": 69,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::mv",
+      "kind": "calls",
+      "line": 79,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::mv",
+      "kind": "reads",
+      "line": 69,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::return",
+      "kind": "calls",
+      "line": 71,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::return",
+      "kind": "reads",
+      "line": 69,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::rm",
+      "kind": "calls",
+      "line": 75,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+      "to": "external::rm",
+      "kind": "reads",
+      "line": 69,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::log",
+      "to": "external::date",
+      "kind": "calls",
+      "line": 56,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::log",
+      "to": "external::date",
+      "kind": "reads",
+      "line": 56,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::log",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 56,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::log",
+      "to": "external::echo",
+      "kind": "reads",
+      "line": 56,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::n_active",
+      "to": "external::\"$VENV/bin/python\"",
+      "kind": "reads",
+      "line": 426,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::n_active",
+      "to": "external::echo",
+      "kind": "reads",
+      "line": 426,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "aecp::deploy::provision::bootstrap::die",
+      "kind": "calls",
+      "line": 86,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "aecp::deploy::provision::bootstrap::die",
+      "kind": "reads",
+      "line": 82,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "calls",
+      "line": 84,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "aecp::deploy::provision::bootstrap::log",
+      "kind": "reads",
+      "line": 82,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::awk",
+      "kind": "calls",
+      "line": 85,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::awk",
+      "kind": "reads",
+      "line": 82,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::basename",
+      "kind": "calls",
+      "line": 84,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::basename",
+      "kind": "reads",
+      "line": 82,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 86,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::grep",
+      "kind": "reads",
+      "line": 82,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::return",
+      "kind": "calls",
+      "line": 84,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::return",
+      "kind": "reads",
+      "line": 82,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::sha512sum",
+      "kind": "calls",
+      "line": 85,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::bootstrap::sha_ok",
+      "to": "external::sha512sum",
+      "kind": "reads",
+      "line": 82,
+      "attrs": {}
+    },
+    {
       "from": "aecp::deploy::provision::box_port_check",
       "to": "aecp::/deploy/provision/box_port_check.py",
       "kind": "contains",
@@ -21630,6 +26576,657 @@
       "to": "aecp::deploy::provision::box_port_check::p",
       "kind": "reads",
       "line": 11,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_ice",
+      "to": "aecp::/deploy/provision/dbg_ice.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_ice",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_ice",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_ice",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io",
+      "to": "aecp::/deploy/provision/dbg_io.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io2",
+      "to": "aecp::/deploy/provision/dbg_io2.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io2",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io2",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io3",
+      "to": "aecp::/deploy/provision/dbg_io3.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_io3",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_mpu",
+      "to": "aecp::/deploy/provision/dbg_mpu.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_mpu",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_perms",
+      "to": "aecp::/deploy/provision/dbg_perms.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_perms",
+      "to": "external::dirname",
+      "kind": "calls",
+      "line": 7,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_perms",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_perms",
+      "to": "external::ls",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_perms",
+      "to": "external::readlink",
+      "kind": "calls",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_perms",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_perms",
+      "to": "external::tail",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec7",
+      "to": "aecp::/deploy/provision/dbg_rec7.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec7",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec7",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec7",
+      "to": "external::systemctl",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec7",
+      "to": "external::tail",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec7",
+      "to": "external::tr",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec7::PID",
+      "to": "external::systemctl",
+      "kind": "reads",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec8",
+      "to": "aecp::/deploy/provision/dbg_rec8.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec8",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec8",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec8",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec8",
+      "to": "external::systemctl",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec8",
+      "to": "external::tr",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_rec8::PID",
+      "to": "external::systemctl",
+      "kind": "reads",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recj",
+      "to": "aecp::/deploy/provision/dbg_recj.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recj",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recj",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recj",
+      "to": "external::tail",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recon",
+      "to": "aecp::/deploy/provision/dbg_recon.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recon",
+      "to": "external::curl",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recon",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recon",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_recon",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_small",
+      "to": "aecp::/deploy/provision/dbg_small.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_small",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr",
+      "to": "aecp::/deploy/provision/dbg_solr.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr2",
+      "to": "aecp::/deploy/provision/dbg_solr2.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr2",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr2",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr2",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr2",
+      "to": "external::ls",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr2",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr3",
+      "to": "aecp::/deploy/provision/dbg_solr3.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr3",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr3",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr3",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr4",
+      "to": "aecp::/deploy/provision/dbg_solr4.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr4",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr4",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solr4",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solrhome",
+      "to": "aecp::/deploy/provision/dbg_solrhome.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solrhome",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_solrhome",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_sync",
+      "to": "aecp::/deploy/provision/dbg_sync.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_sync",
+      "to": "external::cd",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_sync",
+      "to": "external::git",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_sync",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_sync",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_sync",
+      "to": "external::rsync",
+      "kind": "calls",
+      "line": 7,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_sync",
+      "to": "external::tail",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_trace",
+      "to": "aecp::/deploy/provision/dbg_trace.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_trace",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_units",
+      "to": "aecp::/deploy/provision/dbg_units.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_units",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_units",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_units",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_units",
+      "to": "external::systemctl",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_units",
+      "to": "external::tail",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_wb",
+      "to": "aecp::/deploy/provision/dbg_wb.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::dbg_wb",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 2,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "aecp::/deploy/provision/ozone_reset.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::break",
+      "kind": "calls",
+      "line": 16,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 16,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 12,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 23,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::seq",
+      "kind": "calls",
+      "line": 15,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::sleep",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::tail",
+      "kind": "calls",
+      "line": 13,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::deploy::provision::ozone_reset",
+      "to": "external::true",
+      "kind": "calls",
+      "line": 13,
       "attrs": {}
     },
     {
@@ -22057,6 +27654,442 @@
       "attrs": {}
     },
     {
+      "from": "aecp::scripts::e2e::e2e_aimesh",
+      "to": "aecp::/scripts/e2e/e2e_aimesh.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_aimesh",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 9,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_aimesh",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_aimesh",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 10,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_aimesh::VENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "kind": "reads",
+      "line": 7,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway",
+      "to": "aecp::/scripts/e2e/e2e_gateway.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway",
+      "to": "aecp::scripts::e2e::e2e_gateway::check",
+      "kind": "calls",
+      "line": 48,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway",
+      "to": "external::curl",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 7,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 12,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway",
+      "to": "external::tee",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway::check",
+      "to": "external::curl",
+      "kind": "calls",
+      "line": 44,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway::check",
+      "to": "external::curl",
+      "kind": "reads",
+      "line": 43,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway::check",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 45,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway::check",
+      "to": "external::echo",
+      "kind": "reads",
+      "line": 43,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway::check",
+      "to": "external::true",
+      "kind": "calls",
+      "line": 44,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_gateway::check",
+      "to": "external::true",
+      "kind": "reads",
+      "line": 43,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory",
+      "to": "aecp::/scripts/e2e/e2e_memory.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory",
+      "to": "external::exit",
+      "kind": "calls",
+      "line": 25,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory",
+      "to": "external::seq",
+      "kind": "calls",
+      "line": 21,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 3,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory",
+      "to": "external::sleep",
+      "kind": "calls",
+      "line": 27,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 9,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory::REPORT",
+      "to": "aecp::deploy::provision::bootstrap::AECP_DATA",
+      "kind": "reads",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_memory::VENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "kind": "reads",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "aecp::/scripts/e2e/e2e_storage.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "external::\"$OZ\"",
+      "kind": "calls",
+      "line": 21,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 12,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 21,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 42,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 5,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 14,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage",
+      "to": "external::true",
+      "kind": "calls",
+      "line": 17,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage::JAVA_HOME",
+      "to": "aecp::deploy::provision::bootstrap::AECP_JAVA_HOME",
+      "kind": "reads",
+      "line": 10,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage::OZ",
+      "to": "aecp::deploy::provision::bootstrap::AECP_APPS",
+      "kind": "reads",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage::OZONE_HOME",
+      "to": "aecp::deploy::provision::bootstrap::AECP_APPS",
+      "kind": "reads",
+      "line": 9,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_storage::VENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "kind": "reads",
+      "line": 7,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "aecp::/scripts/e2e/e2e_streaming.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::break",
+      "kind": "calls",
+      "line": 77,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::cat",
+      "kind": "calls",
+      "line": 33,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::curl",
+      "kind": "calls",
+      "line": 72,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::date",
+      "kind": "calls",
+      "line": 12,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 16,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::exit",
+      "kind": "calls",
+      "line": 66,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::grep",
+      "kind": "calls",
+      "line": 72,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::head",
+      "kind": "calls",
+      "line": 72,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::rm",
+      "kind": "calls",
+      "line": 67,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::seq",
+      "kind": "calls",
+      "line": 71,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 7,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::sleep",
+      "kind": "calls",
+      "line": 77,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::sudo",
+      "kind": "calls",
+      "line": 17,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming",
+      "to": "external::true",
+      "kind": "calls",
+      "line": 131,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::FLINK_HOME",
+      "to": "aecp::deploy::provision::bootstrap::AECP_APPS",
+      "kind": "reads",
+      "line": 10,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::OUT_DIR",
+      "to": "aecp::deploy::provision::bootstrap::AECP_DATA",
+      "kind": "reads",
+      "line": 11,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::STATE",
+      "to": "aecp::scripts::e2e::e2e_streaming::JOB_ID",
+      "kind": "reads",
+      "line": 75,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::STATE",
+      "to": "aecp::scripts::e2e::e2e_streaming::REST",
+      "kind": "reads",
+      "line": 75,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::STATE",
+      "to": "external::curl",
+      "kind": "reads",
+      "line": 75,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::STATE",
+      "to": "external::grep",
+      "kind": "reads",
+      "line": 75,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::STATE",
+      "to": "external::head",
+      "kind": "reads",
+      "line": 75,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::TOPIC",
+      "to": "external::date",
+      "kind": "reads",
+      "line": 12,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::e2e_streaming::VENV",
+      "to": "aecp::deploy::provision::bootstrap::AECP_VENV",
+      "kind": "reads",
+      "line": 9,
+      "attrs": {}
+    },
+    {
       "from": "aecp::scripts::e2e::flink_sql_rest",
       "to": "aecp::/scripts/e2e/flink_sql_rest.py",
       "kind": "contains",
@@ -22468,6 +28501,145 @@
       "to": "external::time.time",
       "kind": "calls",
       "line": 61,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "aecp::/scripts/e2e/run_all.sh",
+      "kind": "contains",
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "aecp::aecp::memory::bench::run",
+      "kind": "calls",
+      "line": 20,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::cd",
+      "kind": "calls",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::date",
+      "kind": "calls",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::dirname",
+      "kind": "calls",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 26,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::printf",
+      "kind": "calls",
+      "line": 34,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::pwd",
+      "kind": "calls",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::set",
+      "kind": "calls",
+      "line": 4,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all",
+      "to": "external::tee",
+      "kind": "calls",
+      "line": 36,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::DIR",
+      "to": "external::cd",
+      "kind": "reads",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::DIR",
+      "to": "external::dirname",
+      "kind": "reads",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::DIR",
+      "to": "external::pwd",
+      "kind": "reads",
+      "line": 6,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::START",
+      "to": "external::date",
+      "kind": "reads",
+      "line": 8,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::run",
+      "to": "external::bash",
+      "kind": "calls",
+      "line": 16,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::run",
+      "to": "external::bash",
+      "kind": "reads",
+      "line": 11,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::run",
+      "to": "external::echo",
+      "kind": "calls",
+      "line": 13,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::run",
+      "to": "external::echo",
+      "kind": "reads",
+      "line": 11,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::run",
+      "to": "external::id",
+      "kind": "defines",
+      "line": 11,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::scripts::e2e::run_all::run",
+      "to": "external::id",
+      "kind": "writes",
+      "line": 11,
       "attrs": {}
     },
     {
@@ -23907,6 +30079,20 @@
       }
     },
     {
+      "from": "aecp::tests::test_solr_schema::StubResponse::__init__",
+      "to": "aecp::deploy::provision::bootstrap::ok",
+      "kind": "defines",
+      "line": 11,
+      "attrs": {}
+    },
+    {
+      "from": "aecp::tests::test_solr_schema::StubResponse::__init__",
+      "to": "aecp::deploy::provision::bootstrap::ok",
+      "kind": "writes",
+      "line": 11,
+      "attrs": {}
+    },
+    {
       "from": "aecp::tests::test_solr_schema::StubResponse::text",
       "to": "aecp::tests::test_solr_schema::StubResponse::json",
       "kind": "reads",
@@ -24861,31 +31047,31 @@
       "attrs": {}
     }
   ],
-  "audit_head": "85d3194f7d1b9d14f88f4da6eb40da397e94df0842bd57fd25af213106b5eb17",
+  "audit_head": "930365fe37260c7a1ba6d81ce83ce38836b9d16590a08eaa9a7a93a180c0f21b",
   "audit_log": [
     {
       "seq": 0,
-      "ts": "1795021338",
+      "ts": "1795135036",
       "op": "genesis",
       "payload": "{}",
       "prev_hash": "GENESIS",
-      "hash": "cb82ef024dc2b678572fc9d7ac2ce2120544043bf3d55e2e7a466d41558dd389"
+      "hash": "0844c9e48ba4baa88d4aec577912af45dd68e2b24896e194b0077b106db03363"
     },
     {
       "seq": 1,
-      "ts": "1795021338",
+      "ts": "1795135036",
       "op": "index_started",
-      "payload": "{\"package\":\"aecp\",\"repo\":\"/home/hatch/workspace/codetopo-work/PROFILES-GM-GATE-2026-11-18/work/aecp\"}",
-      "prev_hash": "cb82ef024dc2b678572fc9d7ac2ce2120544043bf3d55e2e7a466d41558dd389",
-      "hash": "dc2c492a7de27f0ebe023031b44ffae296cb518d6340d7bc01aaf56b691cde2e"
+      "payload": "{\"package\":\"aecp\",\"repo\":\"/home/hatch/workspace/codetopo-work/EXTRACTOR-PROGRAM-2026-11-19/reprofile/work/aecp\"}",
+      "prev_hash": "0844c9e48ba4baa88d4aec577912af45dd68e2b24896e194b0077b106db03363",
+      "hash": "790c1724e29f8d86897d0fce3a472967f57a9bc96c7a0be1236beb4c3321c26f"
     },
     {
       "seq": 2,
-      "ts": "1795021338",
+      "ts": "1795135036",
       "op": "index_finished",
-      "payload": "{\"diagnostics\":259,\"edges\":2002,\"files_failed\":0,\"files_indexed\":54,\"nodes\":674}",
-      "prev_hash": "dc2c492a7de27f0ebe023031b44ffae296cb518d6340d7bc01aaf56b691cde2e",
-      "hash": "85d3194f7d1b9d14f88f4da6eb40da397e94df0842bd57fd25af213106b5eb17"
+      "payload": "{\"diagnostics\":333,\"edges\":2503,\"files_failed\":0,\"files_indexed\":83,\"nodes\":877}",
+      "prev_hash": "790c1724e29f8d86897d0fce3a472967f57a9bc96c7a0be1236beb4c3321c26f",
+      "hash": "930365fe37260c7a1ba6d81ce83ce38836b9d16590a08eaa9a7a93a180c0f21b"
     }
   ],
   "diagnostics": [
@@ -24900,6 +31086,156 @@
           {
             "file": "aecp/streaming/pulsar_io.py",
             "line": 23
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::REPO",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 30
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 32
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::JAVA_HOME",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 40
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 41
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::RECREATE_VENV",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 333
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 335
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::AECP_SUPERSET_VENV",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 356
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 381
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::AECP_REPO",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 45
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 382
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::ok",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 424
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 432
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::ok",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 424
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 443
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::deploy::provision::bootstrap::ok",
+        "locations": [
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 424
+          },
+          {
+            "file": "deploy/provision/bootstrap.sh",
+            "line": 446
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::scripts::e2e::e2e_streaming::JOB_ID",
+        "locations": [
+          {
+            "file": "scripts/e2e/e2e_streaming.sh",
+            "line": 70
+          },
+          {
+            "file": "scripts/e2e/e2e_streaming.sh",
+            "line": 72
+          }
+        ]
+      }
+    },
+    {
+      "MultiDefinition": {
+        "symbol": "aecp::scripts::e2e::run_all::fails",
+        "locations": [
+          {
+            "file": "scripts/e2e/run_all.sh",
+            "line": 28
+          },
+          {
+            "file": "scripts/e2e/run_all.sh",
+            "line": 31
           }
         ]
       }
@@ -26306,6 +32642,426 @@
     },
     {
       "UnresolvedCall": {
+        "from": "aecp::deploy::provision::aetheris-launch",
+        "target": "cd",
+        "line": 4
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::aetheris-launch",
+        "target": "git",
+        "line": 6
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::aetheris-launch",
+        "target": "set",
+        "line": 3
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::aetheris-launch",
+        "target": "sudo",
+        "line": 10
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "\"$HOME/.cargo/bin/rustc\"",
+        "line": 344
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "\"$SVENV/bin/superset\"",
+        "line": 361
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "\"$VENV/bin/aecpctl\"",
+        "line": 386
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "\"$VENV/bin/pip\"",
+        "line": 319
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "\"$VENV/bin/python\"",
+        "line": 426
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "\"$VENV/bin/uv\"",
+        "line": 340
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "./configure",
+        "line": 175
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "/opt/aecp/venv/bin/pip",
+        "line": 354
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "apt-get",
+        "line": 116
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "break",
+        "line": 401
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "cat",
+        "line": 206
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "chmod",
+        "line": 309
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "chpasswd",
+        "line": 310
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "command",
+        "line": 116
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "cp",
+        "line": 222
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "df",
+        "line": 128
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "dirname",
+        "line": 23
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "echo",
+        "line": 42
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "exit",
+        "line": 42
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "id",
+        "line": 114
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "ldconfig",
+        "line": 176
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "ln",
+        "line": 178
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "make",
+        "line": 175
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "nproc",
+        "line": 175
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "openssl",
+        "line": 259
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "printf",
+        "line": 293
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "pwd",
+        "line": 23
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "python3",
+        "line": 317
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "readlink",
+        "line": 332
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "rsync",
+        "line": 315
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "sed",
+        "line": 199
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "seq",
+        "line": 400
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "sh",
+        "line": 345
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "sha256sum",
+        "line": 293
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "sleep",
+        "line": 122
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "source",
+        "line": 47
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "ss",
+        "line": 124
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "systemctl",
+        "line": 118
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "tail",
+        "line": 128
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "tr",
+        "line": 128
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "true",
+        "line": 118
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "uname",
+        "line": 38
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap",
+        "target": "useradd",
+        "line": 150
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+        "target": "chown",
+        "line": 98
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+        "target": "tar",
+        "line": 96
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::extract_tgz",
+        "target": "touch",
+        "line": 97
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::fetch",
+        "target": "basename",
+        "line": 61
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::fetch",
+        "target": "curl",
+        "line": 64
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::fetch",
+        "target": "mkdir",
+        "line": 62
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::fetch",
+        "target": "mv",
+        "line": 66
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::fetch",
+        "target": "return",
+        "line": 61
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::fetch_soft",
+        "target": "rm",
+        "line": 75
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::log",
+        "target": "date",
+        "line": 56
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::sha_ok",
+        "target": "awk",
+        "line": 85
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::sha_ok",
+        "target": "grep",
+        "line": 86
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::bootstrap::sha_ok",
+        "target": "sha512sum",
+        "line": 85
+      }
+    },
+    {
+      "UnresolvedCall": {
         "from": "aecp::deploy::provision::box_port_check",
         "target": "','.join",
         "line": 16
@@ -26355,9 +33111,30 @@
     },
     {
       "UnresolvedCall": {
-        "from": "aecp::deploy::provision::box_port_check",
-        "target": "set",
-        "line": 12
+        "from": "aecp::deploy::provision::dbg_perms",
+        "target": "ls",
+        "line": 2
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::deploy::provision::dbg_rec8",
+        "target": "head",
+        "line": 5
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::scripts::e2e::e2e_gateway",
+        "target": "tee",
+        "line": 8
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::scripts::e2e::e2e_storage",
+        "target": "\"$OZ\"",
+        "line": 21
       }
     },
     {
@@ -26435,6 +33212,13 @@
         "from": "aecp::scripts::e2e::flink_sql_rest::submit_insert",
         "target": "s.get",
         "line": 64
+      }
+    },
+    {
+      "UnresolvedCall": {
+        "from": "aecp::scripts::e2e::run_all::run",
+        "target": "bash",
+        "line": 16
       }
     },
     {
